@@ -1,0 +1,32 @@
+@import url("stylesheet.css");
+
+.content {
+  display: grid;
+  justify-self:center;
+  width: 70%;
+  margin: 20px 0;
+}
+
+article {
+  grid-area: article;
+  display: grid;
+  grid-template-columns: 1.5fr 1fr;
+  grid-template-areas:
+    "header header"
+    "text img";
+  grid-gap: 20px;
+  width: 100%;
+}
+
+.article-header {
+  grid-area: header;
+}
+
+.article-text {
+  grid-area: text;
+  text-align: left;
+}
+
+.article-img {
+  grid-area: img;
+}
