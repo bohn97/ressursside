@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="nb">
+  <head>
+    <meta charset="utf-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Webutvikling - Ressursside </title>
+    <link rel="stylesheet" href="../css/stylesheet-article.css" type="text/css"/>
+    <link rel="stylesheet" href="../css/print-article.css" type="text/css" media="print"/>
+    <link rel="shortcut icon" href="../bilder/laptop.png" type="image/png"/>
+    <link href="https://fonts.googleapis.com/css?family=Indie+Flower" rel="stylesheet"/>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css"
+      integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous"/>
+  </head>
+
+  <body>
+    <header class="main-header">
+      <h1>Webutvikling </h1>
+    </header>
+
+    <div class="menu">
+      <button id="btnNavbar">
+        <i class="fas fa-bars"></i> Meny
+      </button>
+
+      <nav id="navbar" class="hiddenNavbar">
+        <a href="../index.html">Hjem</a>
+        <a href="../skisse.html">Skisse</a>
+
+        <div class="dropdown">
+          <button id="btnDropdown">Artikler </button>
+          <div id="dropdown-artikler" class="hiddenDropdown">
+            <a href="git-github.html">Git / GitHub</a>
+            <a href="mediatyper.html">Mediatyper</a>
+            <a href="css-layout.html">CSS Layouts</a>
+            <a href="responsivt-design.html">Responsivt design</a>
+            <a href="universell-utforming.html">Universell utforming</a>
+            <a href="wamp.html">WAMP</a>
+            <a href="wordpress.html">WordPress</a>
+            <a href="cms-systemer.html">CMS systemer</a>
+            <a href="seo.html">SEO</a>
+            <a href="sosiale-medier.html">Sosiale medier</a>
+            <a href="microdata.html">Microdata</a>
+            <a href="svg.html">SVG</a>
+          </div>
+        </div>
+      </nav>
+    </div>
+
+    <div class="content">
+      <main>
+        <article>
+          <header class="article-header">
+            <h2>WordPress </h2>
+            <p class="article-date">Lagt ut <time datetime="2018-10-29">29.10.2018 </time> </p>
+          </header>
+
+          <section class="article-text">
+            <h3>Lage ny database (WAMP) </h3>
+            <ol>
+              <li>Start WAMP. </li>
+              <li>Gå til <a href="localhost/phpmyadmin" class="link"> localhost/phpmyadmin</a>. </li>
+              <li>I menyfeltet til venstre velger man "New". </li>
+              <li>Fyll inn databasenavn og trykk "Opprett". </li>
+            </ol>
+
+            <h3>Installere WordPress </h3>
+            <ol>
+              <li>Gå til <a href="https://wordpress.org/" class="link">wordpress.org</a>. Velg "Get WordPress" og "Download WordPress". </li>
+              <li>Pakk ut zip-filen og kopier wordpress-mappa over til der WAMP ligger lagret (i mitt tilfelle: denne pc > lokaldisk > wamp64 > www). Wordpress-mappa
+                kan navngis etter ønske. </li>
+              <li>Gå til <a href="localhost/wordpress" class="link">localhost/wordpress</a>. WordPress database setup vil starte automatisk. </li>
+              <li>Velg først ønsket språk. Videre oppgir man informasjon om databasen som ble opprettet tidligere, og trykker "Send". </li>
+              <li>Nå får man opp en beskjed om at tilkoblingen mellom wordpress og databasen var vellykket og man kan kjøre installasjonen. </li>
+              <li>Fyll så inn informasjonen de etterspør og "Installer WordPress". </li>
+              <li>Man har nå installert Wordpress. </li>
+            </ol>
+
+            <h3>Sette opp en WordPress side </h3>
+            <p>For å redigere nettstedet går man til <a href="localhost/wordpress/wp-admin/" class="link">localhost/wordpress/wp-admin</a> og logger inn med riktig
+              informasjon. Her kan man sette opp og gjøre endringer på din wordpres-side. Alt man trenger finner man i menyfeltet til venstre. </p>
+
+            <h4>Tema </h4>
+            <p>For å se gjeldende tema, endre tema og installere nye, går man til Utseende > Temaer. Her ser man at siden allerede har fått et tema,
+              "Twenty Seventeen". </p>
+            <p>For å installere nye temaer velger man "Legg til nytt tema". Her har man muligheten til å se de populære, favorittene, osv., eller legge på
+              funksjonsfiltre (emne, egenskaper og layout). Når man finner temaet man ønsker å installere holder man musa over "Tema" og får opp valg om å installere
+              eller forhåndsvise. </p>
+            <p>Velger man "Installer", legger temaet seg sammen med de andre installerte og man kan aktivere det. Når temaet er aktivert, har man mulighet til å
+              tilpasse det. Noe av det man kan tilpasse er farger, toppbilde, meny. </p>
+
+            <h5>Qoob </h5>
+            <p>Det ene temaet jeg installerte var Qoob. Følgende endringer ble gjort: </p>
+            <ul>
+              <li>Blog Settings: La til et bakgrunnsbilde.	wordpress-qoob-1</li>
+              <li>Nettstedsidentitet: La til et nettstedsikon.</li>
+              <li>Menyer > Primær: Endret navigasjonsmerket "Blogg" til "Innlegg". </li>
+              <li>Menyer > Sosiale lenker: Huket av "Footer menu" under "Menylokasjoner".	</li>
+            </ul>
+
+            <h5>Hestia </h5>
+            <p>Det andre temaet jeg installerte var Hestia. I tillegg til endringene jeg hadde gjort tidligere, ble følgende endringer gjort: </p>
+            <ul>
+              <li>Forside-seksjoner: Fjernet noen av seksjonene ved å huke av "Disable section", slik at jeg satt igjen med "Seksjon med stor tittel", "Blogg" og
+                "Kontakt". </li>
+              <li>Forside-seksjoner > Seksjon med stor tittel: Endret bilde og tekst. </li>
+              <li>Header Options > Header settings: La til sidetopp. </li>
+            </ul>
+
+            <h4>Plugins </h4>
+            <p>En plugin er et program eller et sett med en eller flere funksjoner skrevet i PHP, som legger til et bestemt sett med funksjoner eller tjenester på
+              WordPress-siden. Plugins lar deg enkelt endre, tilpasse og forbedre et WordPress-nettsted. </p>
+            <p>For å se hvilke plugins som er installert og for å installere nye, velger man "Utvidelser" i menyfeltet til venstre. Her har man muligheten for å
+              aktivere eller slette utvidelser som allerede finnes. For å legge til nye utvidelser velger man "Legg til ny" øverst på siden. Når man finner en man
+              ønsker, velger man "Installer nå". </p>
+
+            <h5>The Events Calendar </h5>
+            <p>En av utvidelsene jeg gikk for, var The Events Calendar. Når man aktiverer The Events Calendar, får man opp et nytt punkt i sidemenyen som heter
+              "Hendelser".  </p>
+            <p>For å endre kalender-innstillinger velger man Hendelser > Instillinger. Her gjorde jeg små endringer på datoformatet. I tillegg huket jeg av på
+              "Inkluder hendelser sammen med innlegg på hovedsiden".  </p>
+            <p>For å legge til nye hendelser, velger man Hendelser > Legg til ny. Her legger man inn nødvendig informasjon og trykker publiser. </p>
+            <p>Går man til a<a href="localhost/wordpress/event" class="link"> localhost/wordpress/event</a> får man opp en side over alle hendelsene. </p>
+
+            <h5>TablePress </h5>
+            <p>En annen utvidelse som jeg sjekket ut var TablePress. Når man aktiverer TablePress, dukker det opp som et punkt i menyen til venstre. </p>
+            <p>For å lage en ny tabell, velger man TablePress > Legg til ny tabell. Her skriver man inn tabellnavn, en beskrivelse (om ønskelig) og oppgir antall rader
+              og kolonner, før man velger "Legg til tabell". Videre er det å fylle inn tabellinnholdet og gjøre nødvendige endringer før man lagrer tabellen. </p>
+            <p>Det er også mulighet for å importere tabeller fra eksisterende data eller å eksportere tabellen slik at den kan benyttes i andre programmer. </p>
+
+            <h4>Widgeter </h4>
+            <p>Widgeter legger til innhold og funksjoner i sidefeltene. </p>
+            <p>For å sette opp nye widgeter går man til Utseende > Widgeter. Her får man en oversikt over tilgjengelige widgeter. For å aktivere en, drar man ønsket
+              widget over til den sidekolonnen man vil ha den i. Man kan også trykke på ønsket widget og velge "Legg til widget". </p>
+            <p>Selv valgte jeg å benytte "Eventlist" og "Søk" i sidepanelet. </p>
+
+            <h4>Nytt innlegg </h4>
+            <p>For å legge til nye innlegg går man til Innlegg > Legg til nytt. Her skriver man inn tittel og legger til ønsket innhold (tekst, bilde, osv.). </p>
+            <p>For å legge til et fremhevet bilde velger man "Bestem fremhevet bilde" under "Fremhevet bilde". Her legger man til et bilde, enten et man har i
+              mediebiblioteket eller et nytt som man laster opp. Under "Vedleggsdetaljer" endrer man informasjon, om ønskelig, før man velger "Bestem fremhevet bilde". </p>
+            <p>Ut ifra tema jeg har på siden, har jeg også mulighet til å bestemme om jeg ønsker sidepanel på høyre eller venstre side, eller ikke sidepanel i det hele
+              tatt. </p>
+            <p>Når man har lagt inn det man vil i innlegget, gjort de endringene man ønsker og føler seg ferdig, velger man "Publiser". Man har også mulighet til å
+              lagre innlegget som kladd, eller forhåndsvise innlegget. Alt dette finner man øverst til høyre. </p>
+
+            <h4>Ny side </h4>
+            <p>For å legge til en nye side, går man til Sider > Legg til ny. </p>
+            <p>Oppsettet når man lager en ny side er det samme som når man lager en ny artikkel. Det er enkelt å ta i bruk, og minner veldig om word. </p>
+            <p>En forskjell mellom innlegg og side er at innleggene legger seg under siden "Innlegg", og kan nås fra menyen på nettstedet. De nye sidene man lager,
+              må man selv legge til i menyen.</p>
+
+            <h4>Statisk forside </h4>
+            <p>For å legge til en statisk side som forside går man til Utseende > Tilpass > Forsideinnstillinger. Her kan man velge om forsiden skal vise
+              "Dine siste innlegg" eller "En statisk side". Velger man at den skal vise "En statisk side", legger man inn informasjon om hvilken side som skal vises
+              som forside. I tillegg kan man oppgi hvilken side som inneholder innlegg. På både hjemmeside og side med innlegg har man mulighet til å legge inn en nye
+              side. Når sidene er valgt, velger man "Publiser". </p>
+            <p>Neste trinn er nå å endre innholdet på forsiden. Siden finner man under "Sider", og har nå blitt markert med " - Forside" etter navnet på siden.
+              Hold over sidenavnet og velg rediger. Her legger man inn tekst og media som vanlig. </p>
+            <p>Istedenfor å legge til et fremhevet bilde, som jeg tidligere har gjort, valgte jeg å ha bilde som en del av innholdet. Dette gjorde jeg ved å velge
+              "Legg til media", fant ønsket bilde og trykket "Sett inn på siden". Videre trykket jeg på bilde og valgte i menyfeltet at bilde skulle være høyrejustert.
+              I tillegg "dro" jeg i bilde for å endre størrelsen. </p>
+            <p>Når man er ferdig med å endre siden, velger man "Oppdater". </p>
+            <p>Man må ikke gjøre ting i denne rekkefølgen. Man kan godt lage siden først og så si at man ønsker å benytte den som forside. </p>
+          </section>
+
+          <section class="article-img">
+            <!--WAMP -->
+            <figure>
+              <img src="../bilder/wamp/newdatabase-1.PNG" alt="Ny database"/>
+              <figcaption>Ny database: Trinn 3 </figcaption>
+            </figure>
+            <figure>
+              <img src="../bilder/wamp/newdatabase-2.PNG" alt="Ny database"/>
+              <figcaption>Ny database: Trinn 4 </figcaption>
+            </figure>
+
+            <!--WordPress -->
+            <figure>
+              <img src="../bilder/wordpress/installation-1.PNG" alt="Installasjon av Wordpress"/>
+              <figcaption>Installere WordPress: Trinn 2 </figcaption>
+            </figure>
+            <figure>
+              <img src="../bilder/wordpress/installation-2.PNG" alt="Installasjon av Wordpress"/>
+              <figcaption>Installere WordPress: Trinn 4 </figcaption>
+            </figure>
+            <figure>
+              <img src="../bilder/wordpress/installation-3.PNG" alt="Installasjon av Wordpress"/>
+              <figcaption>Installere WordPress: Trinn 6 </figcaption>
+            </figure>
+            <figure>
+              <img src="../bilder/wordpress/theme.PNG" alt="Wordpress tema"/>
+              <figcaption>Installasjon av tema </figcaption>
+            </figure>
+            <figure>
+              <img src="../bilder/wordpress/widgeter.PNG" alt="Wordpress widgeter"/>
+              <figcaption>Widgeter plassert i "Sidepanel" </figcaption>
+            </figure>
+            <figure>
+              <img src="../bilder/wordpress/article.PNG" alt="Wordpress artikkel"/>
+              <figcaption>Publisering av innlegg </figcaption>
+            </figure>
+            <figure>
+              <img src="../bilder/wordpress/frontpage.PNG" alt="Wordpress forside"/>
+              <figcaption>Oppsett av statisk forside </figcaption>
+            </figure>
+          </section>
+        </article>
+      </main>
+    </div>
+
+    <footer>
+      <p><a href="mailto:karolibk@hiof.no">karolibk@hiof.no </a></p>
+      <p>&copy; 2018 - Karoline Bøhn Karlsen </p>
+    </footer>
+
+    <script src="../javascript/menu.js"></script>
+  </body>
+</html>

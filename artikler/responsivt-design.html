@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="nb">
+  <head>
+    <meta charset="utf-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Webutvikling - Ressursside </title>
+    <link rel="stylesheet" href="../css/stylesheet-article.css" type="text/css"/>
+    <link rel="stylesheet" href="../css/print-article.css" type="text/css" media="print"/>
+    <link rel="shortcut icon" href="../bilder/laptop.png" type="image/png"/>
+    <link href="https://fonts.googleapis.com/css?family=Indie+Flower" rel="stylesheet"/>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css"
+      integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous"/>
+  </head>
+
+  <body>
+    <header class="main-header">
+      <h1>Webutvikling </h1>
+    </header>
+
+    <div class="menu">
+      <button id="btnNavbar">
+        <i class="fas fa-bars"></i> Meny
+      </button>
+
+      <nav id="navbar" class="hiddenNavbar">
+        <a href="../index.html">Hjem</a>
+        <a href="../skisse.html">Skisse</a>
+
+        <div class="dropdown">
+          <button id="btnDropdown">Artikler </button>
+          <div id="dropdown-artikler" class="hiddenDropdown">
+            <a href="git-github.html">Git / GitHub</a>
+            <a href="mediatyper.html">Mediatyper</a>
+            <a href="css-layout.html">CSS Layouts</a>
+            <a href="responsivt-design.html">Responsivt design</a>
+            <a href="universell-utforming.html">Universell utforming</a>
+            <a href="wamp.html">WAMP</a>
+            <a href="wordpress.html">WordPress</a>
+            <a href="cms-systemer.html">CMS systemer</a>
+            <a href="seo.html">SEO</a>
+            <a href="sosiale-medier.html">Sosiale medier</a>
+            <a href="microdata.html">Microdata</a>
+            <a href="svg.html">SVG</a>
+          </div>
+        </div>
+      </nav>
+    </div>
+
+    <div class="content">
+      <main>
+        <article>
+          <header class="article-header">
+            <h2>Responsivt design </h2>
+            <p class="article-date">Lagt ut <time datetime="2018-10-14">14.10.2018 </time> </p>
+          </header>
+
+          <section class="article-text">
+            <p>Responsivt design betyr at en nettside tilpasser seg ulike enheter med ulik skjermstørrelse. Siden skaleres når størrelsen på
+              skjermen forandres. Ved visse punkter (breakpoints) omstruktureres nettsiden og får et nytt layout, slik at den passer bedre for
+              den aktuelle størrelsen. </p>
+            <p>Stilen endres basert på forhåndsbestemte kriterier, som f.eks. skjermtype, bredde og høyde. Designet på siden er basert på en
+              universell mal, og vil tilpasse flyten på tvers av ulike skjermer. </p>
+            <p>Målet med responsivt design er å lage optimale visninger for alle ulike skjermer. </p>
+
+            <h3>Mobile first </h3>
+            <p>Et av begrepene man kommer over når det er snakk om responsivt design er «mobile first». «Mobile first» betyr at man tar
+              utgangspunkt i en versjon med relativ lav nettleser, f.eks. en mobil, når man skal designe en nettside. Denne versjonen
+              inneholder de mest grunnleggende funksjonen og egenskapene. Videre går man over på en mer avansert versjon for nettbrett og PC’er.
+              Disse versjonene lages ved å legge til bl.a. interaksjoner og mer kompliserte effekter på den grunnleggende versjonen, for å oppnå
+              en bedre brukeropplevelse. </p>
+
+            <h3>Media queries </h3>
+            <p>Media queries er et CSS konsept hvor man kan velge hvilken skjermstørrelse som skal få den spesifiserte stilen. Dette gjør det
+              mulig å presentere det samme innholdet på forskjellige måter ut ifra skjermstørrelsen/oppløsningen. Media queries endrer ikke
+              innholdet på nettsiden, kun stilen. </p>
+            <p>Media queries består av en valgfri medietype og et antall valgfrie uttrykk som begrenser når spørringen vil utløses. De fleste
+              media queries er satt til å utløses ved bestemte skjermbredder eller breakpoints (et punkt/en størrelse hvor annen eller tilpasset
+              CSS-kode skal gjelde). </p>
+            <p>Med media queries kan man selv sette regler basert på f.eks. skjermstørrelser eller om innholdet vises på et stående/liggende
+              medium. </p>
+
+            <h3>Medietyper </h3>
+              <p>Medietyper er et enkelt verktøy som gjør nettstedet visningsvennlig på flere medier. Medietyper lar deg spesifisere CSS for
+              forskjellige enheter og medietyper. </p>
+
+              <h4>Koble mediatype til stilark </h4>
+              <p>Det finnes tre måter man kan koble en mediatype til et stilark, slik at stilarket kun benyttes når et bestemt media
+                blir brukt: </p>
+
+              <h5>1. Linked stilark</h5>
+              <p>Ved å koble media-egenskapen i link-taggen, kan man fortelle nettleseren i hvilken situasjon stilarket skal benyttes. </p>
+
+              <h5>2. Inline stilark (@media)</h5>
+              <p>En annen mulighet er å ha flere mediatyper i samme stilark, uten å nevne noe om mediatypen i link-taggen. Dette gjøres
+                ved å benytte egne @media-blokker i stilarket. Alt som står utenfor en slik blokk, utføres av alle medier, mens
+                despesifikke reglene i en @media-blokk, vil overstyre og utføres i tillegg av de aktuelle mediene. </p>
+
+              <h5>3. Import stilark</h5>
+              <p>Import stilark, som skal brukes, er betinget nedlastet. Det vil si, at stilarket kun blir lastet ned hvis enheten stemmer
+                med den som er spesifisert i media-attributtet. </p>
+
+              <h4>Mer om mediatyper </h4>
+              <p>Noen av mediatypene som er definert i CSS er: </p>
+              <ul>
+                <li>all – Gjelder uansett hvilket media vi bruker for å se nettsiden. </li>
+                <li>print – Styrer utseendet på utskriften. Beregnet for dokumenter som skal skrives ut.</li>
+                <li>screen – Beregnet for skjermer.</li>
+                <li>speech – Spesifikasjon for opplesning av elementer. Beregnet for skjermlesere og lignende enheter som leser
+                  en side.</li>
+              </ul>
+
+            <h3>Fleksible størrelser </h3>
+            <p>Den beste måten å angi fontstørrelser på, er å angi basis fontstørrelse som en utregning basert på standard fontstørrelse i
+              nettleseren + skjermstørrelse, og deretter bruke rem for å angi størrelser på tekstelementer. </p>
+            <p>Denne løsningen tar hensyn til størrelsen på skjermen, men vil ha en fast størrelse å skalere etter. I tillegg tar den hensyn
+              til brukere. Hvis brukeren har justert fontstørrelsen i nettleseren, vil teksten på websiden skaleres etter det. </p>
+          </section>
+
+          <section class="article-img">
+            <figure>
+              <img src="../bilder/website-mobile.PNG" alt="Siden på mobil"/>
+              <figcaption>Foto: Nettsiden på mobil </figcaption>
+            </figure>
+          </section>
+        </article>
+      </main>
+    </div>
+
+    <footer>
+      <p><a href="mailto:karolibk@hiof.no">karolibk@hiof.no </a></p>
+      <p>&copy; 2018 - Karoline Bøhn Karlsen </p>
+    </footer>
+
+    <script src="../javascript/menu.js"></script>
+  </body>
+</html>

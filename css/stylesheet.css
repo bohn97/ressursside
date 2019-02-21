@@ -1,3 +1,4 @@
+/*Importerer normaliserings-stilark*/
 @import url("../ressurser/normalize.css");
 
 img {
@@ -9,12 +10,10 @@ body {
   grid-template-columns: 1fr;
   grid-template-areas:
     "header"
-    "navbar"
+    "menu"
     "content"
     "footer";
-  grid-gap: 0 20px;
   max-width: 100%;
-  margin: 0 auto;
   font-family: "Lato", sans-serif;
   font-size: 16px;
 }
@@ -24,37 +23,72 @@ body {
   background-image: url("../bilder/background.jpg");
   background-size: cover;
   background-position: top;
-  height: 350px;
+  height: 250px;
 }
 
-.navbar {
-  grid-area: navbar;
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  flex-wrap: wrap;
+.menu {
+  grid-area: menu;
+}
+
+#btnNavbar {
+  font-size: 1.5rem;
   background-color: #BAB5C1;
-  height: auto;
-}
-
-.navbar a {
-  text-decoration: none;
-  text-align: center;
-  color: #ffffff;
-  font-size: 14pt;
-  width: auto;
-  padding: 0 30px;
-  line-height: 40px;
-}
-
-.navbar a:hover {
+  width: 100%;
+  border: none;
   color: #000000;
+  padding: 5px 0;
+}
+
+#navbar {
+  background-color: #BAB5C1;
+  border-top: ridge;
+  width: 100%;
+}
+
+#navbar a{
+  display: block;
+  text-decoration: none;
+  color: #000000;
+  font-size: 14pt;
+  padding: 10px 20px;
+}
+
+/*Skjuler navbar */
+.hiddenNavbar {
+  display: none;
+}
+
+/* Ordner dropdown-del av navbar */
+#btnDropdown {
+  font-size: 14pt;
+  background-color: #BAB5C1;
+  width: 100%;
+  border: none;
+  color: #000000;
+  padding: 10px 20px;
+  text-align: left;
+}
+
+#dropdown-artikler {
+  background-color: #BAB5C1;
+}
+
+#dropdown-artikler a{
+  display: block;
+  text-decoration: none;
+  color: #000000;
+  font-size: 14pt;
+  padding: 10px 40px;
+}
+
+/* Skjuler dropdown */
+.hiddenDropdown {
+  display: none;
 }
 
 .content {
   grid-area: content;
 }
-
 
 footer {
   grid-area: footer;
@@ -63,15 +97,12 @@ footer {
   padding: 1rem;
 }
 
-footer a{
-  color: #ffffff;
-}
-
-footer a:hover {
+footer a {
   color: #000000;
 }
+
 footer p {
-  color: #ffffff;
+  color: #000000;
 }
 
 h1 {
@@ -79,11 +110,26 @@ h1 {
   font-size: 45px;
   color: #ffffff;
   text-align: center;
-  margin-top: 250px;
+  margin-top: 180px;
 }
 
 h2 {
   text-align: center;
+  font-size: 1.5rem;
+}
+
+h3 {
+  font-size: 1.25rem;
+}
+
+h4 {
+  font-size: 1.1rem;
+  line-height: 0;
+}
+
+h5 {
+  font-size: 1rem;
+  line-height: 0;
 }
 
 .link {
@@ -91,22 +137,113 @@ h2 {
   color: #000000;
 }
 
-.link:hover {
-  font-weight: bold;
-}
-
 .button {
   text-decoration: none;
   background-color: #66a3b7;
-  color: #ffffff;
+  color: #000000;
   border-style: ridge;
+  border-color: #ffffff;
   padding: 5px 10px;
-}
-
-.button:hover {
-  background-color: #5b92a4;
 }
 
 .button:active {
   background-color: #518292;
+}
+
+/* Mulighet for å bruke tab gjennom dropdown-artikler*/
+:focus-within > #dropdown-artikler {
+  display: inline-block;
+  list-style: none;
+}
+
+/*Gjelder skjermer <= 768px */
+@media screen and (max-width: 768px) {
+  /* Mulighet for å bruke tab gjennom navbar */
+  :focus-within > #navbar {
+    display: inline-block;
+    list-style: none;
+  }
+}
+
+/*Gjelder skjermer >= 768px */
+@media screen and (min-width: 768px) {
+  body {
+    grid-gap: 0 20px;
+    margin: 0 auto;
+  }
+
+  .main-header {
+    height: 350px;
+  }
+
+  h1 {
+    margin-top: 250px;
+  }
+
+  /*Skjuler meny-knapp */
+  #btnNavbar {
+    display: none;
+  }
+
+  #navbar {
+    display: block;
+    grid-area: navbar;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    flex-wrap: wrap;
+    height: auto;
+    border: none;
+  }
+
+  #navbar a{
+    text-align: center;
+    width: auto;
+    padding: 0 30px;
+    line-height: 40px;
+  }
+
+  #navbar a:hover {
+    color: #ffffff;
+  }
+
+  /* Ordner dropdown-del av navbar */
+  .dropdown {
+    width: auto;
+  }
+
+  #btnDropdown:hover{
+    color: #ffffff;
+  }
+
+  .dropdown:hover #dropdown-artikler {
+    display: block;
+    position: absolute;
+  }
+
+  #dropdown-artikler {
+    position: absolute;
+    background-color: #BAB5C1;
+  }
+
+  #dropdown-artikler a {
+    text-align: left;
+    padding: 10px 20px;
+  }
+
+  .link:hover {
+    font-weight: bold;
+  }
+
+  .button:hover {
+    background-color: #5b92a4;
+  }
+
+  .button:active {
+    background-color: #518292;
+  }
+
+  footer a:hover {
+    color: #ffffff;
+  }
 }

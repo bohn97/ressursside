@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="nb">
+  <head>
+    <meta charset="utf-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Webutvikling - Ressursside </title>
+    <link rel="stylesheet" href="../css/stylesheet-article-combo.css" type="text/css"/>
+    <link rel="stylesheet" href="../css/print-article.css" type="text/css" media="print"/>
+    <link rel="shortcut icon" href="../bilder/laptop.png" type="image/png"/>
+    <link href="https://fonts.googleapis.com/css?family=Indie+Flower" rel="stylesheet"/>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css"
+      integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous"/>
+  </head>
+
+  <body>
+    <header class="main-header">
+      <h1>Webutvikling </h1>
+    </header>
+
+    <div class="menu">
+      <button id="btnNavbar">
+        <i class="fas fa-bars"></i> Meny
+      </button>
+
+      <nav id="navbar" class="hiddenNavbar">
+        <a href="../index.html">Hjem</a>
+        <a href="../skisse.html">Skisse</a>
+
+        <div class="dropdown">
+          <button id="btnDropdown">Artikler </button>
+          <div id="dropdown-artikler" class="hiddenDropdown">
+            <a href="git-github.html">Git / GitHub</a>
+            <a href="mediatyper.html">Mediatyper</a>
+            <a href="css-layout.html">CSS Layouts</a>
+            <a href="responsivt-design.html">Responsivt design</a>
+            <a href="universell-utforming.html">Universell utforming</a>
+            <a href="wamp.html">WAMP</a>
+            <a href="wordpress.html">WordPress</a>
+            <a href="cms-systemer.html">CMS systemer</a>
+            <a href="seo.html">SEO</a>
+            <a href="sosiale-medier.html">Sosiale medier</a>
+            <a href="microdata.html">Microdata</a>
+            <a href="svg.html">SVG</a>
+          </div>
+        </div>
+      </nav>
+    </div>
+
+    <div class="content">
+      <main>
+        <article>
+          <header class="article-header">
+            <h2>Microdata </h2>
+            <p class="article-date">Lagt ut <time datetime="2018-11-11">11.11.2018 </time> </p>
+          </header>
+
+          <section class="article-combo">
+            <p>Microdata er en del av HTML-standarden og brukes til å neste metadata innenfor eksisterende innhold på nettsider.
+              Søkemotorer, crawlers og nettlesere kan trekke ut og behandle microdata fra en nettside og bruke den til å gi en
+              rikere nettleseropplevelse for brukere. I tillegg benyttes microdata til maskinell lesing av informasjon. </p>
+            <p>Søkemotorer har stor nytte av direkte tilgang til denne strukturerte dataen, da det tillater søkemotorer å forstå
+              informasjonen på nettsider, og dermed gi mer relevante resultater til brukerne. Microdata benytter et større vokabular
+              for å beskrive en gruppe navn-verdi-par, kalt elementer, og hvilken property de har. </p>
+            Microdata brukes ved å legge til følgende attributter på HTML-elementene:
+            <ul>
+              <li>itemscope: Forteller at alt som kommer inn i denne taggen handler om samme type informasjon. </li>
+              <li>itemtype: Identifiserer hvilket vokabular man benytter. Link til vokabular. </li>
+              <li>itemid: Definerer en unik ID. </li>
+              <li>itemprop: Markerer de ulike bitene informasjon. Definerer property på et element. </li>
+              <li>itemref: Benytte for å referere til en itemid i et annen itemscope. </li>
+            </ul>
+
+            <h3>Fordeler </h3>
+            <p>En av de viktigste grunnene til å benytte microdata er at søkemotorene forstår informasjonen. I tillegg kan
+              søkemotorer presentere informasjonen i nettsiden på en mer informativ og tiltalende måte i søketreffene.  </p>
+            <p>Søkemotorer bruker microdata for å forstå nettstedets innhold på en bedre måte, og til å finne de beste resultatene
+              for søkemotorbrukere. Avhengig av type nettside, vil søkemotorer bruke schema microdata som tilbys, til å vise
+              tilleggsinformasjon direkte i søkeresultatet. </p>
+            <p>Søkemotorer foretrekker microdata, da dette gjør crawling av nettstedet enklere. Det forteller dem hva som skal
+              utheves og hva som er viktig for siden. </p>
+
+            <h3>Schema </h3>
+            <p>schema.org, ofte kalt schema, er et semantisk ordforråd av tagger, eller microdata, som man kan legge til i HTML for
+              å forbedre måten søkemotorer leser og representerer siden din i søkemotorer. </p>
+            <p>schema er en av de mest utbredte vokabularene for microdata, og har laget definisjon på en lang rekke med ting,
+              som f.eks. artikler, arrangement, bøker, person, osv. </p>
+            <p>schema vokabular kan brukes av mange forskjellige typer kodinger, inkludert RDFa, microdata og JSON-LD. Disse
+              vokabularene dekker enheter, forhold mellom enheter og handlinger, og kan enkelt utvides gjennom en veldokumentert
+              forlengelsesmodell. </p>
+
+            <h3>Eksempler </h3>
+            <p>Under følger ulike eksempelsider, hvor hver side inneholder informasjon som er strukturert med hvert sitt
+              microdata-vokabular. </p>
+
+            <h4>Person </h4>
+            <figure>
+              <img src="../bilder/microdata/person.PNG" alt="Google sin tolkning av Person"/>
+              <figcaption>Hvordan Google benytter informasjonen som er strukturert med Person-vokabular. </figcaption>
+            </figure>
+            <a href="../microdata/person.html" class="link">Eksempelsiden om Person </a>
+
+            <h4>Book </h4>
+            <figure>
+              <img src="../bilder/microdata/book.PNG" alt="Google sin tolkning av Book"/>
+              <figcaption>Hvordan Google benytter informasjonen som er strukturert med Book-vokabular. </figcaption>
+            </figure>
+            <a href="../microdata/book.html" class="link">Eksempelsiden om Book </a>
+
+            <h4>TVSeries </h4>
+            <figure>
+              <img src="../bilder/microdata/tvseries.PNG" alt="Google sin tolkning av TVSeries"/>
+              <figcaption>Hvordan Google benytter informasjonen som er strukturert med TVSeries-vokabular. </figcaption>
+            </figure>
+            <a href="../microdata/tvseries.html" class="link">Eksempelsiden om TVSeries </a>
+
+            <h4>Article </h4>
+            <figure>
+              <img src="../bilder/microdata/article.PNG" alt="Google sin tolkning av Article"/>
+              <figcaption>Hvordan Google benytter informasjonen som er strukturert med Article-vokabular. </figcaption>
+            </figure>
+            <a href="../microdata/article.html" class="link">Eksempelsiden om Article </a>
+
+            <h4>Event </h4>
+            <figure>
+              <img src="../bilder/microdata/event.PNG" alt="Google sin tolkning av Event"/>
+              <figcaption>Hvordan Google benytter informasjonen som er strukturert med Event-vokabular. </figcaption>
+            </figure>
+            <a href="../microdata/event.html" class="link">Eksempelsiden om Event </a>
+          </section>
+        </article>
+      </main>
+    </div>
+
+    <footer>
+      <p><a href="mailto:karolibk@hiof.no">karolibk@hiof.no </a></p>
+      <p>&copy; 2018 - Karoline Bøhn Karlsen </p>
+    </footer>
+
+    <script src="../javascript/menu.js"></script>
+  </body>
+</html>

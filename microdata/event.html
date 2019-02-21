@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="nb">
+  <head>
+    <meta charset="utf-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Webutvikling - Ressursside </title>
+    <link rel="stylesheet" href="../css/stylesheet-microdata.css" type="text/css"/>
+    <link rel="shortcut icon" href="../bilder/laptop.png" type="image/png"/>
+    <link href="https://fonts.googleapis.com/css?family=Indie+Flower" rel="stylesheet"/>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css"
+      integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous"/>
+  </head>
+
+  <body>
+    <header class="main-header">
+      <h1>Webutvikling </h1>
+    </header>
+
+    <div class="menu">
+      <button id="btnNavbar">
+        <i class="fas fa-bars"></i> Meny
+      </button>
+
+      <nav id="navbar" class="hiddenNavbar">
+        <a href="../index.html">Hjem</a>
+        <a href="../skisse.html">Skisse</a>
+
+        <div class="dropdown">
+          <button id="btnDropdown">Artikler </button>
+          <div id="dropdown-artikler" class="hiddenDropdown">
+            <a href="../artikler/git-github.html">Git / GitHub</a>
+            <a href="../artikler/mediatyper.html">Mediatyper</a>
+            <a href="../artikler/css-layout.html">CSS Layouts</a>
+            <a href="../artikler/responsivt-design.html">Responsivt design</a>
+            <a href="../artikler/universell-utforming.html">Universell utforming</a>
+            <a href="../artikler/wamp.html">WAMP</a>
+            <a href="../artikler/wordpress.html">WordPress</a>
+            <a href="../artikler/cms-systemer.html">CMS systemer</a>
+            <a href="../artikler/seo.html">SEO</a>
+            <a href="../artikler/sosiale-medier.html">Sosiale medier</a>
+            <a href="../artikler/microdata.html">Microdata</a>
+            <a href="../artikler/svg.html">SVG</a>
+          </div>
+        </div>
+      </nav>
+    </div>
+
+    <div class="content">
+      <main>
+        <h2>Event </h2>
+
+        <article itemscope itemtype="http://schema.org/Event">
+          <h3 itemprop="name">The Tall Ships Races Fredrikstad </h3>
+          <p itemprop="description"> I 2019 kommer The Tall Ships Races for tredje gang tilbake til Fredrikstad. Elva og byen skal
+            igjen fylles av de stolte skutene med sine majestetiske rigger og ungdommelige mannskap. </p>
+
+          <p><b>Arrangementet starter:</b> <span itemprop="startDate" content="2019-07-11T12:00">Torsdag 11. juli 2019</span><br />
+            <b>Arrangementet slutter:</b> <span itemprop="endDate" content="2019-07-14T15:00">Søndag 14. juli 2019</span></p>
+
+          <p itemprop="location" itemscope itemtype="http://schema.org/Place"> <b>Sted:</b>
+            <span itemprop="name">Fredrikstad kommune</span> <br />
+            <b>Adresse:</b>
+            <span itemprop="address" itemscope itemtype="http://schema.org/PostalAddress">
+              <span itemprop="streetAddress">Nygårdsgata 14/16</span>,
+              <span itemprop="postalCode">1602</span>
+              <span itemprop="addressLocality">Fredrikstad</span>
+            </span>
+          </p>
+        </article>
+
+        <p><a href="../artikler/microdata.html" class="link">Tilbake til oppgaven</a></p>
+      </main>
+    </div>
+
+    <footer>
+      <p><a href="mailto:karolibk@hiof.no">karolibk@hiof.no </a></p>
+      <p>&copy; 2018 - Karoline Bøhn Karlsen </p>
+    </footer>
+
+    <script src="../javascript/menu.js"></script>
+  </body>
+</html>

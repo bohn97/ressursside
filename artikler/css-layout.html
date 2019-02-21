@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="nb">
+  <head>
+    <meta charset="utf-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Webutvikling - Ressursside </title>
+    <link rel="stylesheet" href="../css/stylesheet-article.css" type="text/css"/>
+    <link rel="stylesheet" href="../css/print-article.css" type="text/css" media="print"/>
+    <link rel="shortcut icon" href="../bilder/laptop.png" type="image/png"/>
+    <link href="https://fonts.googleapis.com/css?family=Indie+Flower" rel="stylesheet"/>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css"
+      integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous"/>
+  </head>
+
+  <body>
+    <header class="main-header">
+      <h1>Webutvikling </h1>
+    </header>
+
+    <div class="menu">
+      <button id="btnNavbar">
+        <i class="fas fa-bars"></i> Meny
+      </button>
+
+      <nav id="navbar" class="hiddenNavbar">
+        <a href="../index.html">Hjem</a>
+        <a href="../skisse.html">Skisse</a>
+
+        <div class="dropdown">
+          <button id="btnDropdown">Artikler </button>
+          <div id="dropdown-artikler" class="hiddenDropdown">
+            <a href="git-github.html">Git / GitHub</a>
+            <a href="mediatyper.html">Mediatyper</a>
+            <a href="css-layout.html">CSS Layouts</a>
+            <a href="responsivt-design.html">Responsivt design</a>
+            <a href="universell-utforming.html">Universell utforming</a>
+            <a href="wamp.html">WAMP</a>
+            <a href="wordpress.html">WordPress</a>
+            <a href="cms-systemer.html">CMS systemer</a>
+            <a href="seo.html">SEO</a>
+            <a href="sosiale-medier.html">Sosiale medier</a>
+            <a href="microdata.html">Microdata</a>
+            <a href="svg.html">SVG</a>
+          </div>
+        </div>
+      </nav>
+    </div>
+
+    <div class="content">
+      <main>
+        <article>
+          <header class="article-header">
+            <h2>CSS Layouts </h2>
+            <p class="article-date">Lagt ut <time datetime="2018-10-01">01.10.2018 </time> </p>
+          </header>
+
+          <section class="article-text">
+            <h3>CSS Flexbox </h3>
+            <p>Flexblox er en endimensjonal layout-modell, som tilbyr plassfordeling mellom elementer i et grensesnitt. Det at flexbox er
+              endimensjonal, vil si at den jobber med layout i en dimensjon av gangen, enten som rad eller som kolonne. </p>
+            <p>Flexbox er laget slik at man enkelt kan manipulere oppsettet til en rekke elementer på måter som tidligere var vanskelige.
+              Flexbox gjør det også enklere å designe fleksible responsive layout-strukturer, uten å benytte float eller posisjonering. </p>
+            <p>Formålet til flexbox er å tilby en effektiv måte å legge ut, justere og distribuere ledig plass mellom elementer i en
+              beholder, selv om størrelsen er ukjent og/eller dynamisk (derav ordet flex). Hovedideen er å gi beholderen mulighet til å
+              endre elementets bredde, høyde og rekkefølge, for å best mulig fylle ledig plass. En flex-beholder utvider elementer for å
+              fylle ledig plass, eller krymper dem for å hindre overflow. </p>
+            <p>I tillegg har flexbox kraftige tilpasningsmuligheter, og håndterer skalering av nettsiden til ulike skjermstørrelser og
+              medietyper på en god måte. </p>
+            <a href="https://css-tricks.com/snippets/css/a-guide-to-flexbox/" class="link">Mer om CSS Flexbox. </a>
+
+            <h3>CSS Grid</h3>
+            <p>Grid er et todimensjonalt rutenettsystem (basert på rader og kolonner), som gjør at man raskt kan lage fleksible,
+              todimensjonale oppsett. Dette kan benyttes til å plassere, endre størrelse, justere og lage design som tidligere var
+              vanskelige eller umulig med floats og flexbox.</p>
+            <p>Grid utmerker seg når det kommer til det å dele inn en side i store regioner, og ved å definere forholdet i form av
+              størrelse, posisjon og lag mellom deler av en kontroll som er bygget fra HTML-primitiver.</p>
+            <p>Grid kan brukes til å utforme store områder av en side eller små brukergrensesnitt-elementer. </p>
+            <p>For å jobbe med Grid, benyttes CSS-regler på både foreldre-elementet (grid-beholderen) og på child-elementene
+              (Grid-elementer). </p>
+            <a href="https://css-tricks.com/snippets/css/complete-guide-grid/" class="link">Mer om CSS Grid. </a>
+
+            <h3>Table </h3>
+            <p>Table benyttes for å presentere data på en strukturert måte ved hjelp av tabeller. Tidligere ble table mye brukt til å
+              strukturere og designe innholdet på en nettside. </p>
+            <a href="https://css-tricks.com/complete-guide-table-element/" class="link">Mer om table. </a>
+
+            <h3>Posisjonering </h3>
+            <p>Posisjonering angir hvordan et element er plassert på en side. </p>
+
+            <h4>static </h4>
+            <p>Standardverdi for HTML-elementer. Elementene vises i den rekkefølgen de står i HTML-dokumentet. </p>
+
+            <h4>relative </h4>
+            <p>Plasserer elementet i forhold til hvor det ville vært plassert i normal flyt. Elementet forblir i posisjonen sin, og påvirker
+              ikke posisjonen til elementene rundt. </p>
+
+            <h4>fixed </h4>
+            <p>Forteller nøyaktig hvor noe skal bli plassert i forhold til øverste venstre hjørne av browservinduet. Elementet flytter ikke på
+              seg når brukeren scroller opp/ned på
+              siden, og påvirker ikke elementer rundt. </p>
+
+            <h4>absolute </h4>
+            <p>Forteller hvor elementet skal plasseres i forhold til elementet det er en del av (foreldreelementet). Hvis elementet er en direkte
+              del av body-taggen, vil absolute fungere tilnærmet lik fixed, bortsett fra at elementet følger med når brukeren scroller opp/ned på
+              siden. Elementet tas ut av normal flyt, men påvirker ikke posisjonen til omkringliggende elementer. </p>
+
+            <h4>sticky </h4>
+            <p>Skifter mellom relativ og fast plassering, avhengig av scroll-posisjonen. Elementet har en relativ plassering, til det krysser
+              en spesifisert terskel. Da blir plasseringen fast. </p>
+
+
+            <h3>Float </h3>
+            <p>Floating er en posisjoneringsteknikk hvor man angir hvordan et element skal flyte i forhold til de andre elementene. Float tar
+              elementet ut av nettsidens normale flyt, og plasserer det langs venstre/høyre side av beholderen (helt til høyre/venstre i
+              foreldreboksen), slik at annet innhold kan flyte rundt det.  </p>
+            <a href="https://css-tricks.com/all-about-floats/" class="link">Mer om float. </a>
+          </section>
+
+          <section class="article-img">
+            <!--<figure>
+              <img src="" alt=""/>
+              <figcaption>Foto: </figcaption>
+            </figure>-->
+          </section>
+        </article>
+      </main>
+    </div>
+
+    <footer>
+      <p><a href="mailto:karolibk@hiof.no">karolibk@hiof.no </a></p>
+      <p>&copy; 2018 - Karoline Bøhn Karlsen </p>
+    </footer>
+
+    <script src="../javascript/menu.js"></script>
+  </body>
+</html>

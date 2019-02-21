@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="nb">
+  <head>
+    <meta charset="utf-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Webutvikling - Ressursside </title>
+    <link rel="stylesheet" href="../css/stylesheet-article.css" type="text/css"/>
+    <link rel="stylesheet" href="../css/print-article.css" type="text/css" media="print"/>
+    <link rel="shortcut icon" href="../bilder/laptop.png" type="image/png"/>
+    <link href="https://fonts.googleapis.com/css?family=Indie+Flower" rel="stylesheet"/>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css"
+      integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous"/>
+
+    <!--Facebook markup -->
+    <meta property="og:url" content="http://itstud.hiof.no/~karolibk/webutvikling/oblig5/artikler/sosiale-medier.html" />
+    <meta property="og:type" content="article" />
+    <meta property="og:title" content="Sosiale Medier" />
+    <meta property="og:description" content="Det finnes to ulike metoder for å koble en nettside opp mot sosiale medier. Hvilke metoder er det, og hvordan gjøres dette?" />
+    <meta property="og:image" content="http://itstud.hiof.no/~karolibk/webutvikling/oblig5/bilder/social-media.png" />
+
+    <!--Twitter markup -->
+    <meta name="twitter:card" content="summary" />
+    <meta name="twitter:title" content="Sosiale Medier" />
+    <meta name="twitter:creator" content="@Bohn1997" />
+    <meta name="twitter:description" content="Det finnes to ulike metoder for å koble en nettside opp mot sosiale medier. Hvilke metoder er det, og hvordan gjøres dette?" />
+    <meta name="twitter:image" content="http://itstud.hiof.no/~karolibk/webutvikling/oblig5/bilder/social-media.png" />
+  </head>
+
+  <body>
+    <header class="main-header">
+      <h1>Webutvikling </h1>
+    </header>
+
+    <div class="menu">
+      <button id="btnNavbar">
+        <i class="fas fa-bars"></i> Meny
+      </button>
+
+      <nav id="navbar" class="hiddenNavbar">
+        <a href="../index.html">Hjem</a>
+        <a href="../skisse.html">Skisse</a>
+
+        <div class="dropdown">
+          <button id="btnDropdown">Artikler </button>
+          <div id="dropdown-artikler" class="hiddenDropdown">
+            <a href="git-github.html">Git / GitHub</a>
+            <a href="mediatyper.html">Mediatyper</a>
+            <a href="css-layout.html">CSS Layouts</a>
+            <a href="responsivt-design.html">Responsivt design</a>
+            <a href="universell-utforming.html">Universell utforming</a>
+            <a href="wamp.html">WAMP</a>
+            <a href="wordpress.html">WordPress</a>
+            <a href="cms-systemer.html">CMS systemer</a>
+            <a href="seo.html">SEO</a>
+            <a href="sosiale-medier.html">Sosiale medier</a>
+            <a href="microdata.html">Microdata</a>
+            <a href="svg.html">SVG</a>
+          </div>
+        </div>
+      </nav>
+    </div>
+
+    <div class="content">
+      <main>
+        <article>
+          <header class="article-header">
+            <h2>Sosiale medier </h2>
+            <p class="article-date">Lagt ut <time datetime="2018-11-11">11.11.2018 </time> </p>
+          </header>
+
+          <section class="article-text">
+            <p>Det finnes to ulike metoder for å koble en nettside opp mot sosiale medier. Det er å optimalisere nettsidene for deling i
+              sosiale medier og inkludere informasjon fra sosiale medier i nettsidene.</p>
+
+            <h3>Optimalisere for deling </h3>
+            <p>Når man deler en URL i sosiale medier vil tjenesten forsøke å hente ut informasjon fra nettsiden. Denne informasjonen benyttes
+              til å lage informative forhåndsvisninger av innholdet og til å kategorisere og prioritere innholdet for visning i andre brukeres
+              nyhetstrømmer. Det er følgelig viktig å optimalisere nettsiden slik at den kan tolkes på best mulig måte. De ulike tjenestene
+              har ulike krav til hvordan nettsiden skal formateres. </p>
+
+            <h4>Facebook</h4>
+            <p>Det meste innholdet deles til Facebook som en nettadresse, så det er viktig å markere nettstedet sitt med Open Graph-koder for
+              å ta kontroll over hvordan innholdet skal vises på Facebook. Uten disse kodene bruker Facebook Crawler intern heuristikk for å
+              gi den beste gjettingen om tittelen, beskrivelse og forhåndsvisningsbildet for innholdet ditt. </p>
+            <p>Open Graph går ut på at man legger inn meta-tagger i head-seksjonen av nettsiden. </p>
+
+            <h5>Kode </h5>
+            <p>For å legge til Facebook markup på denne siden, benyttet jeg følgende kode: </p>
+            <img src="../bilder/social-media/facebook-markup.PNG" alt="Kode for Facebook markup" />
+            <p>og:url definere nettadressen til den saken som skal deles på Facebook. Her er det viktig å få med hele den udekorerte
+              nettadressen som ikke inneholder sesjonsvariabler, brukeridentifiserende parametere eller tellere. </p>
+            <p>og:type definerer hva det er som skal deles (medietypen i innholdet), i dette tilfellet en artikkel. </p>
+            <p>og:title definere tittelen på det som skal deles. Her er det lurt å unngå merkevarer som f.eks. navnet på nettstedet. </p>
+            <p>og:description er en beskrivelse av det som skal deles. Dette bør være en kort beskrivelse som fenger leseren. </p>
+            <p>og:image definerer bildet som skal brukes i delingen på Facebook (i form av nettadressen til bildet). </p>
+
+            <h4>Twitter </h4>
+            <p>Twitter baserer seg på et lignende system som Facebook, men benytter Twitter Cards istedenfor Open Graph. Med Twitter Card
+              kan man legge til bilder, video og medieopplevelser til Tweets, noe som bidrar til å drive trafikk til nettstedet ditt. Ved å
+              legge til noen få linjer med markering på nettsiden, vil brukere som tweeter linker til innholdet ditt ha et "kort" lagt til
+              tweeten som er synlig for deres følgere.  </p>
+
+            <h5>Kode </h5>
+            <p>For å legge til Twitter Card på denne siden, benyttet jeg følgende kode: </p>
+            <img src="../bilder/social-media/twitter-markup.PNG" alt="Kode for Twitter Card" />
+            <p>twitter:card definerer korttypen. I dette tilfellet har jeg benyttet meg av Summary som angir en liten normal twitter story.
+              Et annet alternativ er å benytte summary_large_image som angir en twitter post med stort illustrasjonsbilde. </p>
+            <p>twitter:title definerer tittelen på det som skal deles. </p>
+            <p>twitter:creator brukes for å linke opp mot en twitterkonto for forfatteren av det som deles. </p>
+            <p>twitter:description er en beskrivelse av det som skal deles. </p>
+            <p>twitter:image definerer illustrasjonsbildet til det som skal deles. </p>
+
+            <b>I tillegg til denne siden, har jeg markert følgende sider for bruk med Facebook og Twitter. </b>
+            <ul>
+              <li><a href=".../index.html" class="link">Forsiden </a></li>
+              <li><a href="seo.html" class="link">Siden om SEO </a></li>
+            </ul>
+
+            <h3>Inkludere data fra sosiale medier </h3>
+            <p>En annen mulighet er å inkludere informasjon fra sosiale medier i nettsiden. Dette krever i utgangspunktet noe programmering
+              eller avansert HTML, men tjenestene har laget verktøy som produserer denne koden på en enkel måte. </p>
+
+            <h4>Facebook </h4>
+            <p>Facebook har er et stort bibliotek med ulike social plugins som man kan benytte i nettsiden sin. Verktøy for å lage koden
+              finner man på <a href="https://developers.facebook.com/docs/plugins" class="link">developers.facebook.com</a>.</p>
+
+            <h4>Twitter </h4>
+            <p>Twitter har et tilsvarende system for å lage widgets/skjermelementer av ulike typer. Disse finner man på
+              <a href="https://twitter.com/settings/widgets" class="link">twitter.com</a>. </p>
+          </section>
+
+          <section class="article-img">
+            <figure>
+              <img src="../bilder/social-media/facebook-view.PNG" alt="Visning av artikkel på facebook" />
+              <figcaption>Visning av artikkelen ved deling på Facebook. </figcaption>
+            </figure>
+
+            <figure>
+              <img src="../bilder/social-media/twitter-view.PNG" alt="Visning av artikkel på twitter" />
+              <figcaption>Visning av artikkelen ved deling på Twitter. </figcaption>
+            </figure>
+          </section>
+        </article>
+      </main>
+    </div>
+
+    <footer>
+      <p><a href="mailto:karolibk@hiof.no">karolibk@hiof.no </a></p>
+      <p>&copy; 2018 - Karoline Bøhn Karlsen </p>
+    </footer>
+
+    <script src="../javascript/menu.js"></script>
+  </body>
+</html>

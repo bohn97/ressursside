@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="nb">
+  <head>
+    <meta charset="utf-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Webutvikling - Ressursside </title>
+    <link rel="stylesheet" href="../css/stylesheet-microdata.css" type="text/css"/>
+    <link rel="shortcut icon" href="../bilder/laptop.png" type="image/png"/>
+    <link href="https://fonts.googleapis.com/css?family=Indie+Flower" rel="stylesheet"/>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css"
+      integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous"/>
+  </head>
+
+  <body>
+    <header class="main-header">
+      <h1>Webutvikling </h1>
+    </header>
+
+    <div class="menu">
+      <button id="btnNavbar">
+        <i class="fas fa-bars"></i> Meny
+      </button>
+
+      <nav id="navbar" class="hiddenNavbar">
+        <a href="../index.html">Hjem</a>
+        <a href="../skisse.html">Skisse</a>
+
+        <div class="dropdown">
+          <button id="btnDropdown">Artikler </button>
+          <div id="dropdown-artikler" class="hiddenDropdown">
+            <a href="../artikler/git-github.html">Git / GitHub</a>
+            <a href="../artikler/mediatyper.html">Mediatyper</a>
+            <a href="../artikler/css-layout.html">CSS Layouts</a>
+            <a href="../artikler/responsivt-design.html">Responsivt design</a>
+            <a href="../artikler/universell-utforming.html">Universell utforming</a>
+            <a href="../artikler/wamp.html">WAMP</a>
+            <a href="../artikler/wordpress.html">WordPress</a>
+            <a href="../artikler/cms-systemer.html">CMS systemer</a>
+            <a href="../artikler/seo.html">SEO</a>
+            <a href="../artikler/sosiale-medier.html">Sosiale medier</a>
+            <a href="../artikler/microdata.html">Microdata</a>
+            <a href="../artikler/svg.html">SVG</a>
+          </div>
+        </div>
+      </nav>
+    </div>
+
+    <div class="content">
+      <main>
+        <h2>TVSeries </h2>
+
+        <article itemscope itemtype="http://schema.org/TVSeries">
+          <h3 itemprop="name">Riverdale </h3>
+          <p>The quiet little town of Riverdale is turned upside down after it is struck with the mysterious death of Jason Blossom,
+            a popular high school student and member of the most powerful family in town. Archie and his friends explore the
+            struggles of everyday life in a small town whilst taking on the haunting case of Jason Blossom. in order to solve this
+            mystery, the rag tag group of friends must first unlock the secrets that lie buried deep beneath surface of their
+            hometown. Riverdale may not be as innocent as it appears. </p>
+
+          <p>Based on: <span itemprop="isBasedOn">charactes by Archie Comics </span> </p>
+          <p>Number of seasos: <span itemprop="numberOfSeasons">3 </span></p>
+
+          <p>Creator: <span itemprop="creator" itemscope itemtype="http://schema.org/Person">
+            <span itemprop="name">Roberto Aguirre-Sacasa</span>
+          </span></p>
+
+          Actor:
+          <ul>
+            <li itemprop="actor">K.J. Apa </li>
+            <li itemprop="actor">Lili Reinhart </li>
+            <li itemprop="actor">Camila Mendes </li>
+            <li itemprop="actor">Cole Sprouse </li>
+          </ul>
+
+          <p>Rating: <span itemprop="aggregateRating" itemscope itemtype="https://schema.org/AggregateRating">
+            <span itemprop="ratingValue">7,6</span>/
+            <span itemprop="bestRating">10</span> by
+            <span itemprop="ratingCount">68867</span> users.
+            </span></p>
+          </article>
+
+        <p><a href="../artikler/microdata.html" class="link">Tilbake til oppgaven</a></p>
+      </main>
+    </div>
+
+    <footer>
+      <p><a href="mailto:karolibk@hiof.no">karolibk@hiof.no </a></p>
+      <p>&copy; 2018 - Karoline Bøhn Karlsen </p>
+    </footer>
+
+    <script src="../javascript/menu.js"></script>
+  </body>
+</html>

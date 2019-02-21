@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="nb">
+  <head>
+    <meta charset="utf-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Webutvikling - Ressursside </title>
+    <link rel="stylesheet" href="../css/stylesheet-microdata.css" type="text/css"/>
+    <link rel="shortcut icon" href="../bilder/laptop.png" type="image/png"/>
+    <link href="https://fonts.googleapis.com/css?family=Indie+Flower" rel="stylesheet"/>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css"
+      integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous"/>
+  </head>
+
+  <body>
+    <header class="main-header">
+      <h1>Webutvikling </h1>
+    </header>
+
+    <div class="menu">
+      <button id="btnNavbar">
+        <i class="fas fa-bars"></i> Meny
+      </button>
+
+      <nav id="navbar" class="hiddenNavbar">
+        <a href="../index.html">Hjem</a>
+        <a href="../skisse.html">Skisse</a>
+
+        <div class="dropdown">
+          <button id="btnDropdown">Artikler </button>
+          <div id="dropdown-artikler" class="hiddenDropdown">
+            <a href="../artikler/git-github.html">Git / GitHub</a>
+            <a href="../artikler/mediatyper.html">Mediatyper</a>
+            <a href="../artikler/css-layout.html">CSS Layouts</a>
+            <a href="../artikler/responsivt-design.html">Responsivt design</a>
+            <a href="../artikler/universell-utforming.html">Universell utforming</a>
+            <a href="../artikler/wamp.html">WAMP</a>
+            <a href="../artikler/wordpress.html">WordPress</a>
+            <a href="../artikler/cms-systemer.html">CMS systemer</a>
+            <a href="../artikler/seo.html">SEO</a>
+            <a href="../artikler/sosiale-medier.html">Sosiale medier</a>
+            <a href="../artikler/microdata.html">Microdata</a>
+            <a href="../artikler/svg.html">SVG</a>
+          </div>
+        </div>
+      </nav>
+    </div>
+
+    <div class="content">
+      <main>
+        <h2>Article </h2>
+
+        <article itemscope itemtype="http://schema.org/Article">
+          <h3 itemprop="headline">Internasjonal skutefest for rent hav </h3>
+          <img src="../bilder/tsrf.jpg" alt="Tall Ships Races Fredrikstad" itemprop="image"/>
+          <p><i>Av <span itemprop="author">Tall Ships Races 2019</span></i></p>
+          <p itemprop="description">Seilskuter fra hele verden kommer til Fredrikstad neste sommer når byen er vertskap for The Tall
+            Ships Races for tredje gang. Prosjektleder Ingar Guttormsen vil også benytte muligheten til å engasjere flere mot
+            plastforsøpling. </p>
+
+          <section itemprop="articleBody">
+            <p>– Vi oppfordrer alle til å holde av dagene 11. til 14. juli neste sommer. Da kommer seilskuter fra alle verdenshjørner
+              til byen med seilglad ungdom. Vi skal ta imot med åpne armer og en folkefest uten sidestykke, sier Guttormsen. </p>
+            <p>– Det blir åpne skuter, scener, aktiviteter og opplevelser over hele byen. Men vi ønsker også å skape et arrangement
+              med fokus på utfordringene rundt plastforsøpling av verdenshavene. Vi håper at både medseilere, frivillige,
+              samarbeidspartnere og publikum vil fremstå som Rent Hav-ambassadører, fortsetter han. </p>
+
+            <h4>Internasjonalt vennskap </h4>
+            <p>The Tall Ships Races er verdens største regatta for seilskuter. Regattaen og arrangementet The Tall Ships Races eies av
+              Sail Training International, og har som hovedmål å stimulere til internasjonalt vennskap og forståelse mellom ungdom.
+              Alle skutene som er med driver seilopplæring, og alle forplikter seg til å ta med ungdom under regattaen. </p>
+            <p>– Vi kommer til å sende et stort antall unge med skutene. Disse vil seile sammen med andre unge og få venner fra hele
+              verden. Så har vi i Fredrikstad et eget mål om at de også engasjerer seg i plastutfordringene i havet både under
+              regattaen og når de kommer hjem, sier Guttormsen. </p>
+
+            <h4>Lokalt engasjement </h4>
+            <p>Guttormsen mener at det med Fredrikstads rike maritime historie føles riktig å bruke muligheten skutefesten gir til å
+              løfte den største utfordringen vi har på havet i disse dager. </p>
+            <p>– Årlig fylles verdenshavene med 8 millioner tonn plastavfall som sakte brytes ned og blir til mikroplast. Gjenstander
+              av plast, gummi og andre lite nedbrytbare materialer kan bli værende i miljøet i hundrevis av år og skade dyr og
+              mennesker.</p>
+            <p>– På Isegran bygde de skuter som seilte med Tordenskiold på 1600-tallet, så sent som i 1890 var Fredrikstad den byen
+              med flest seilskuter i landet, og her bygde Bjarne Aas lekre og konkurransedyktige seilbåter for et internasjonalt
+              marked på 1900-tallet. </p>
+            <p>– Det er et stort engasjement og mye maritim kunnskap i Fredrikstad. Dette kan vi bruke til både å feire byen og bidra
+              til å redde havet, sier han. </p>
+          </section>
+
+          <p><i>Publisert <span itemprop="datePublished" content="2018-11-07">07.11.2018</span><br /> av
+            <span itemprop="publisher" itemscope itemtype="http://schema.org/Organization"><span itemprop="name">Havneliv </span>
+            </span></i></p>
+        </article>
+
+        <p><a href="../artikler/microdata.html" class="link">Tilbake til oppgaven</a></p>
+      </main>
+    </div>
+
+    <footer>
+      <p><a href="mailto:karolibk@hiof.no">karolibk@hiof.no </a></p>
+      <p>&copy; 2018 - Karoline Bøhn Karlsen </p>
+    </footer>
+
+    <script src="../javascript/menu.js"></script>
+  </body>
+</html>

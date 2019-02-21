@@ -1,4 +1,5 @@
 body {
+  display: block;
   background-color: #ffffff;
   background-image: none;
   font-family: "Times New Roman", Georgia, serif;
@@ -6,11 +7,7 @@ body {
   color: #000000;
 }
 
-.main-header {
-  display: none;
-}
-
-.navbar {
+.main-header, .menu, footer {
   display: none;
 }
 
@@ -18,18 +15,25 @@ body {
   width: 100%;
 }
 
-footer {
-  display: none;
-}
-
 p {
+  display: block;
   page-break-inside: avoid;
 }
 
 figure {
+  display: block;
   page-break-inside: avoid;
 }
 
+img {
+  display: block;
+  page-break-inside: avoid;
+  height: auto;
+  width: auto;
+  max-width: 100%;
+}
+
+/*Legger til url etter link*/
 a::after {
   content: " (" attr(href) ") ";
   font-size: 14px;

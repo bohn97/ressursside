@@ -1,0 +1,23 @@
+/*Importerer hovedstilarket */
+@import url("stylesheet.css");
+
+.content {
+  display: grid;
+  justify-self: center;
+  width: 90%;
+  margin: 20px 0;
+}
+
+/*Gjelder skjermer >= 768px */
+@media screen and (min-width: 768px) {
+  .content {
+    width: 70%;
+  }
+}
+
+/*Gjelder skjermer >= 1024px */
+@media screen and (min-width: 1024px) {
+  .content {
+    width: 50%;
+  }
+}

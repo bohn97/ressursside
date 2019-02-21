@@ -1,25 +1,30 @@
+/*Importerer hovedstilarket */
 @import url("stylesheet.css");
 
 .content {
   display: grid;
-  justify-self:center;
-  width: 70%;
+  justify-self: center;
+  width: 90%;
   margin: 20px 0;
 }
 
 article {
   grid-area: article;
   display: grid;
-  grid-template-columns: 1.5fr 1fr;
   grid-template-areas:
-    "header header"
-    "text img";
-  grid-gap: 20px;
-  width: 100%;
+    "header"
+    "text"
+    "img";
+  grid-gap: 10px;
 }
 
 .article-header {
   grid-area: header;
+}
+
+.article-date {
+  font-style: italic;
+  color: #457D92;
 }
 
 .article-text {
@@ -29,4 +34,27 @@ article {
 
 .article-img {
   grid-area: img;
+}
+
+figure {
+  margin-bottom: 20px;
+}
+
+/*Gjelder skjermer >= 768px */
+@media screen and (min-width: 768px) {
+  article {
+    grid-template-columns: 1.5fr 1fr;
+    grid-template-areas:
+      "header header"
+      "text img";
+    grid-gap: 20px;
+    width: 100%;
+  }
+}
+
+/*Gjelder skjermer >= 1024px */
+@media screen and (min-width: 1024px) {
+  .content {
+    width: 70%;
+  }
 }

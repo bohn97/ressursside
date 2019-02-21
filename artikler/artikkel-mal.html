@@ -2,11 +2,14 @@
 <html lang="nb">
   <head>
     <meta charset="utf-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Webutvikling - Ressursside </title>
     <link rel="stylesheet" href="../css/stylesheet-article.css" type="text/css"/>
     <link rel="stylesheet" href="../css/print-article.css" type="text/css" media="print"/>
-    <link href="https://fonts.googleapis.com/css?family=Indie+Flower" rel="stylesheet"/>
     <link rel="shortcut icon" href="../bilder/laptop.png" type="image/png"/>
+    <link href="https://fonts.googleapis.com/css?family=Indie+Flower" rel="stylesheet"/>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css"
+      integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous"/>
   </head>
 
   <body>
@@ -14,18 +17,41 @@
       <h1>Webutvikling </h1>
     </header>
 
-    <nav class="navbar">
-      <a href="../index.html">Hjem</a>
-      <a href="#">Git / GitHub</a>
-      <a href="#">Mediatyper</a>
-      <a href="#">CSS Layouts</a>
-    </nav>
+    <div class="menu">
+      <button id="btnNavbar">
+        <i class="fas fa-bars"></i> Meny
+      </button>
+
+      <nav id="navbar" class="hiddenNavbar">
+        <a href="../index.html">Hjem</a>
+        <a href="../skisse.html">Skisse</a>
+
+        <div class="dropdown">
+          <button id="btnDropdown">Artikler </button>
+          <div id="dropdown-artikler" class="hiddenDropdown">
+            <a href="git-github.html">Git / GitHub</a>
+            <a href="mediatyper.html">Mediatyper</a>
+            <a href="css-layout.html">CSS Layouts</a>
+            <a href="responsivt-design.html">Responsivt design</a>
+            <a href="universell-utforming.html">Universell utforming</a>
+            <a href="wamp.html">WAMP</a>
+            <a href="wordpress.html">WordPress</a>
+            <a href="cms-systemer.html">CMS systemer</a>
+            <a href="seo.html">SEO</a>
+            <a href="sosiale-medier.html">Sosiale medier</a>
+            <a href="microdata.html">Microdata</a>
+            <a href="svg.html">SVG</a>
+          </div>
+        </div>
+      </nav>
+    </div>
 
     <div class="content">
       <main>
         <article>
           <header class="article-header">
-            <h2>Tittel</h2>
+            <h2>Tittel </h2>
+            <p class="article-date">Lagt ut <time datetime="2018-10-01">01.10.2018 </time> </p>
           </header>
 
           <section class="article-text">
@@ -34,7 +60,7 @@
 
           <section class="article-img">
             <!--<figure>
-              <img src="" alt="/>
+              <img src="" alt=""/>
               <figcaption>Foto: </figcaption>
             </figure>-->
           </section>
@@ -46,5 +72,7 @@
       <p><a href="mailto:karolibk@hiof.no">karolibk@hiof.no </a></p>
       <p>&copy; 2018 - Karoline Bøhn Karlsen </p>
     </footer>
+
+    <script src="../javascript/menu.js"></script>
   </body>
 </html>

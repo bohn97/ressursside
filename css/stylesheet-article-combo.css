@@ -1,0 +1,51 @@
+/*Importerer hovedstilarket */
+@import url("stylesheet.css");
+
+.content {
+  display: grid;
+  justify-self: center;
+  width: 90%;
+  margin: 20px 0;
+}
+
+article {
+  grid-area: article;
+  display: grid;
+  grid-template-areas:
+    "header"
+    "content";
+  grid-gap: 10px;
+}
+
+.article-header {
+  grid-area: header;
+}
+
+.article-date {
+  font-style: italic;
+  color: #457D92;
+}
+
+.article-combo {
+  grid-area: content;
+  text-align: left;
+}
+
+figure {
+  margin-bottom: 20px;
+}
+
+/*Gjelder skjermer >= 768px */
+@media screen and (min-width: 768px) {
+  article {
+    grid-gap: 20px;
+    width: 100%;
+  }
+}
+
+/*Gjelder skjermer >= 1024px */
+@media screen and (min-width: 1024px) {
+  .content {
+    width: 70%;
+  }
+}

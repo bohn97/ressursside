@@ -2,10 +2,27 @@
 <html lang="nb">
   <head>
     <meta charset="utf-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Webutvikling - Ressursside </title>
     <link rel="stylesheet" href="css/stylesheet-index.css" type="text/css"/>
-    <link href="https://fonts.googleapis.com/css?family=Indie+Flower" rel="stylesheet">
     <link rel="shortcut icon" href="bilder/laptop.png" type="image/png"/>
+    <link href="https://fonts.googleapis.com/css?family=Indie+Flower" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css"
+      integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous"/>
+
+    <!--Facebook markup -->
+    <meta property="og:url" content="http://itstud.hiof.no/~karolibk/webutvikling/oblig5/index.html" />
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="Webutvikling - Ressursside" />
+    <meta property="og:description" content="Artikler om forskjellige temaer i faget webutvikling. En ressurs til forberedelsen av eksamen." />
+    <meta property="og:image" content="http://itstud.hiof.no/~karolibk/webutvikling/oblig5/bilder/background.jpg" />
+
+    <!--Twitter markup -->
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="Webutvikling - Ressursside" />
+    <meta name="twitter:creator" content="@Bohn1997" />
+    <meta name="twitter:description" content="Artikler om forskjellige temaer i faget webutvikling. En ressurs til forberedelsen av eksamen." />
+    <meta name="twitter:image" content="http://itstud.hiof.no/~karolibk/webutvikling/oblig5/bilder/background.jpg" />
   </head>
 
   <body>
@@ -13,12 +30,34 @@
       <h1>Webutvikling </h1>
     </header>
 
-    <nav class="navbar">
-      <a href="index.html">Hjem</a>
-      <a href="#">Git / GitHub</a>
-      <a href="#">Mediatyper</a>
-      <a href="#">CSS Layouts</a>
-    </nav>
+    <div class="menu">
+      <button id="btnNavbar">
+        Meny <i class="fas fa-bars"></i>
+      </button>
+
+      <nav id="navbar" class="hiddenNavbar">
+        <a href="index.html">Hjem</a>
+        <a href="skisse.html">Skisse</a>
+
+        <div class="dropdown">
+          <button id="btnDropdown">Artikler </button>
+          <div id="dropdown-artikler" class="hiddenDropdown">
+            <a href="artikler/git-github.html">Git / GitHub</a>
+            <a href="artikler/mediatyper.html">Mediatyper</a>
+            <a href="artikler/css-layout.html">CSS Layouts</a>
+            <a href="artikler/responsivt-design.html">Responsivt design</a>
+            <a href="artikler/universell-utforming.html">Universell utforming</a>
+            <a href="artikler/wamp.html">WAMP</a>
+            <a href="artikler/wordpress.html">WordPress</a>
+            <a href="artikler/cms-systemer.html">CMS systemer</a>
+            <a href="artikler/seo.html">SEO</a>
+            <a href="artikler/sosiale-medier.html">Sosiale medier</a>
+            <a href="artikler/microdata.html">Microdata</a>
+            <a href="artikler/svg.html">SVG</a>
+          </div>
+        </div>
+      </nav>
+    </div>
 
     <div class="content">
       <main>
@@ -28,21 +67,84 @@
             <img src="bilder/github.jpg" alt="Github"/>
             <h3>Git / Github </h3>
             <p>En beskrivelse av hva Git og Github er, hvilke fordeler det er med å bruke Git, og mine tanker om det. </p>
-            <a href="#" class="link">Les mer </a>
+            <a href="artikler/git-github.html" class="link">Les mer </a>
           </article>
 
           <article>
             <img src="bilder/deskspace.jpg" alt="Deskspace"/>
             <h3>Mediatyper </h3>
             <p>En beskrivelse av hva mediatyper er og hvordan man bruker disse. </p>
-            <a href="#" class="link">Les mer </a>
+            <a href="artikler/mediatyper.html" class="link">Les mer </a>
           </article>
 
           <article>
             <img src="bilder/website-design.jpg" alt="Website-design"/>
             <h3>CSS Layouts </h3>
             <p>En beskrivelse av de forskjellige metodene for layouts i CSS. </p>
-            <a href="#" class="link">Les mer </a>
+            <a href="artikler/css-layout.html" class="link">Les mer </a>
+          </article>
+
+          <article>
+            <img src="bilder/responsive-website-design.jpg" alt="Responsivt web-design"/>
+            <h3>Responsivt design </h3>
+            <p>En beskrivelse av responsivt design og hva som anses som viktig for responsive nettsider. </p>
+            <a href="artikler/responsivt-design.html" class="link">Les mer </a>
+          </article>
+
+          <article>
+            <img src="bilder/accessibility.jpg" alt="TIlgjengelighet"/>
+            <h3>Universell utforming </h3>
+            <p>En beskrivelse av universell utforming. </p>
+            <a href="artikler/universell-utforming.html" class="link">Les mer </a>
+          </article>
+
+          <article>
+            <img src="bilder/wamp.jpg" alt="WAMP-logo"/>
+            <h3>WAMP </h3>
+            <p>En enkel brukermanual til hvordan man installerer WAMMP. </p>
+            <a href="artikler/wamp.html" class="link">Les mer </a>
+          </article>
+
+          <article>
+            <img src="bilder/wordpress.jpg" alt="WordPress-logo"/>
+            <h3>WordPress </h3>
+            <p>En beskrivelse av prosessen med å sette opp et WordPress-nettsted. </p>
+            <a href="artikler/wordpress.html" class="link">Les mer </a>
+          </article>
+
+          <article>
+            <img src="bilder/cms.jpg" alt="CMS systemer"/>
+            <h3>CMS systemer </h3>
+            <p>En beskrivelse av CMS systemer og fordeler og ulemper ved å benytte et CMS system. </p>
+            <a href="artikler/cms-systemer.html" class="link">Les mer </a>
+          </article>
+
+          <article>
+            <img src="bilder/seo.jpg" alt="SEO"/>
+            <h3>SEO </h3>
+            <p>Viktigheten av SEO og teknisk implementasjon av SEO. </p>
+            <a href="artikler/seo.html" class="link">Les mer </a>
+          </article>
+
+          <article>
+            <img src="bilder/social-media.png" alt="Sosiale medier"/>
+            <h3>Sosiale medier </h3>
+            <p>Teknisk implementasjon av sosiale medier. </p>
+            <a href="artikler/sosiale-medier.html" class="link">Les mer </a>
+          </article>
+
+          <article>
+            <img src="bilder/microdata.jpg" alt="Microdata"/>
+            <h3>Microdata </h3>
+            <p>En beskrivelse av Microdata, hvorfor det benyttes og hvilke fordeler oppmerking av innhold med microdata har. </p>
+            <a href="artikler/microdata.html" class="link">Les mer </a>
+          </article>
+
+          <article>
+            <img src="bilder/svg.jpg" alt="SVG-logo"/>
+            <h3>SVG </h3>
+            <p>En beskrivelse av SVG, hvilke fordeler og ulemper SVG har, hva SVG kan benyttes til og hva det ikke egner seg til. </p>
+            <a href="artikler/svg.html" class="link">Les mer </a>
           </article>
         </section>
       </main>
@@ -75,5 +177,7 @@
       <p><a href="mailto:karolibk@hiof.no">karolibk@hiof.no </a></p>
       <p>&copy; 2018 - Karoline Bøhn Karlsen </p>
     </footer>
+
+    <script src="javascript/menu.js"></script>
   </body>
 </html>

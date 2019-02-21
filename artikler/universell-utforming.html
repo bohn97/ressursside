@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="nb">
+  <head>
+    <meta charset="utf-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Webutvikling - Ressursside </title>
+    <link rel="stylesheet" href="../css/stylesheet-article.css" type="text/css"/>
+    <link rel="stylesheet" href="../css/print-article.css" type="text/css" media="print"/>
+    <link rel="shortcut icon" href="../bilder/laptop.png" type="image/png"/>
+    <link href="https://fonts.googleapis.com/css?family=Indie+Flower" rel="stylesheet"/>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css"
+      integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous"/>
+  </head>
+
+  <body>
+    <header class="main-header">
+      <h1>Webutvikling </h1>
+    </header>
+
+    <div class="menu">
+      <button id="btnNavbar">
+        <i class="fas fa-bars"></i> Meny
+      </button>
+
+      <nav id="navbar" class="hiddenNavbar">
+        <a href="../index.html">Hjem</a>
+        <a href="../skisse.html">Skisse</a>
+
+        <div class="dropdown">
+          <button id="btnDropdown">Artikler </button>
+          <div id="dropdown-artikler" class="hiddenDropdown">
+            <a href="git-github.html">Git / GitHub</a>
+            <a href="mediatyper.html">Mediatyper</a>
+            <a href="css-layout.html">CSS Layouts</a>
+            <a href="responsivt-design.html">Responsivt design</a>
+            <a href="universell-utforming.html">Universell utforming</a>
+            <a href="wamp.html">WAMP</a>
+            <a href="wordpress.html">WordPress</a>
+            <a href="cms-systemer.html">CMS systemer</a>
+            <a href="seo.html">SEO</a>
+            <a href="sosiale-medier.html">Sosiale medier</a>
+            <a href="microdata.html">Microdata</a>
+            <a href="svg.html">SVG</a>
+          </div>
+        </div>
+      </nav>
+    </div>
+
+    <div class="content">
+      <main>
+        <article>
+          <header class="article-header">
+            <h2>Universell utforming </h2>
+            <p class="article-date">Lagt ut <time datetime="2018-10-14">14.10.2018 </time> </p>
+          </header>
+
+          <section class="article-text">
+            <p>Universell utforming handler om å utforme nettsiden slik at man tar hensyn til variasjonen i funksjonsevnene, inkludert
+              personer med nedsatt funksjonsevne. Ideen er å lage en hovedløsning så brukervennlig, at det i liten grad skal være behov for
+              spesialløsninger ved siden av. På denne måten oppnår man: </p>
+            <ul>
+              <li>Færre løsninger å utvikle og vedlikeholde. </li>
+              <li>Få eller ingen spesialløsninger for «de funksjonshemmede». </li>
+              <li>Løsninger som er enklere og bedre for alle. </li>
+              <li>Flere måter å bruke løsningen på. </li>
+              <li>Mulighet for at flere kan bruke løsningen. </li>
+            </ul>
+            <p>Begrensninger kan være situasjonsbetont, midlertidig eller permanent. Det kan også være teknologiske begrensinger. </p>
+            <p>I Norge er universell utforming et lovkrav og gjelder alle nye løsninger som utvikles og publiseres etter 1. juli 2014. Eldre
+              løsninger som blir oppgradert/redesignet må også implementere universell utforming. Fra og med 1. januar 2021 skal alle web og
+              IKT løsninger være universelt utformet. </p>
+
+            <h4>Prinsipper for universell utforming: </h4>
+            <ul>
+              <li>Fornuftige alternative tekster.</li>
+              <li>Fornuftige dokumentstruktur.</li>
+              <li>Gi tittelrader for tabeller.</li>
+              <li>Sørge for at brukere kan fylle ut og sende inn skjemaer. </li>
+              <li>Sørge for at linker gir mening basert på kontekst.</li>
+              <li>Ha hjelpetekster/transkripsjoner av media.</li>
+              <li>Tilby tilgjengelige alternativer til innhold som ikke er HTML. </li>
+              <li>Gi brukeren mulighet for å droppe gjentagende elementer på en side («Skip to content»).</li>
+              <li>Farge skal ikke være eneste meningsbærende effekt på noe element. </li>
+              <li>Sørge for god lesbarhet i innholdet (overskrifter, lister, fontvalg). </li>
+            </ul>
+
+            <h3>WAI-ARIA/ARIA </h3>
+            <p>WAI-ARIA/ARIA (Web Accessability Initiative – Accessible Rich Internet Applications) er en standard for å gjøre webapplikasjoner
+              og websider mer tilgjengelig for alle brukere. Det har et spesielt fokus på å gi mer semantiske verdier til elementer som ikke
+              har noen innebygget semantikk. </p>
+            <p>Dette gjøres ved hjelp av roles (definerer hva et element er/gjør), properties (beskriver ekstra semantikk for et element) og
+              states (beskriver tilstanden til et element). </p>
+            <p>WAI-ARIA/ARIA har ingen effekt på siden. Den blir brukt av skjermlesere og andre programmer som bruker nettleserens
+              Accessibility API’er. WAI-ARIA/ARIA øker tilgjengeligheten og maskinlesbarheten. </p>
+
+            <h3>Eksterne ressurser: </h3>
+            <ul>
+              <li><a href="https://uu.difi.no/kva-er-universell-utforming" class="link">Difi om univerell utforming </a> </li>
+              <li><a href="https://uu.difi.no/krav-og-regelverk/losningsforslag-web" class="link">Difi sitt løsningsforslag for web </a> </li>
+              <li><a href="https://developer.mozilla.org/en-US/docs/Learn/Accessibility/WAI-ARIA_basics" class="link">WAI-ARIA basics </a> </li>
+            </ul>
+          </section>
+
+          <section class="article-img">
+            <!--<figure>
+              <img src="" alt=""/>
+              <figcaption>Foto: </figcaption>
+            </figure>-->
+          </section>
+        </article>
+      </main>
+    </div>
+
+    <footer>
+      <p><a href="mailto:karolibk@hiof.no">karolibk@hiof.no </a></p>
+      <p>&copy; 2018 - Karoline Bøhn Karlsen </p>
+    </footer>
+
+    <script src="../javascript/menu.js"></script>
+  </body>
+</html>

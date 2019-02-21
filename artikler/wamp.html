@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="nb">
+  <head>
+    <meta charset="utf-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Webutvikling - Ressursside </title>
+    <link rel="stylesheet" href="../css/stylesheet-article.css" type="text/css"/>
+    <link rel="stylesheet" href="../css/print-article.css" type="text/css" media="print"/>
+    <link rel="shortcut icon" href="../bilder/laptop.png" type="image/png"/>
+    <link href="https://fonts.googleapis.com/css?family=Indie+Flower" rel="stylesheet"/>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css"
+      integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous"/>
+  </head>
+
+  <body>
+    <header class="main-header">
+      <h1>Webutvikling </h1>
+    </header>
+
+    <div class="menu">
+      <button id="btnNavbar">
+        <i class="fas fa-bars"></i> Meny
+      </button>
+
+      <nav id="navbar" class="hiddenNavbar">
+        <a href="../index.html">Hjem</a>
+        <a href="../skisse.html">Skisse</a>
+
+        <div class="dropdown">
+          <button id="btnDropdown">Artikler </button>
+          <div id="dropdown-artikler" class="hiddenDropdown">
+            <a href="git-github.html">Git / GitHub</a>
+            <a href="mediatyper.html">Mediatyper</a>
+            <a href="css-layout.html">CSS Layouts</a>
+            <a href="responsivt-design.html">Responsivt design</a>
+            <a href="universell-utforming.html">Universell utforming</a>
+            <a href="wamp.html">WAMP</a>
+            <a href="wordpress.html">WordPress</a>
+            <a href="cms-systemer.html">CMS systemer</a>
+            <a href="seo.html">SEO</a>
+            <a href="sosiale-medier.html">Sosiale medier</a>
+            <a href="microdata.html">Microdata</a>
+            <a href="svg.html">SVG</a>
+          </div>
+        </div>
+      </nav>
+    </div>
+
+    <div class="content">
+      <main>
+        <article>
+          <header class="article-header">
+            <h2>WAMP </h2>
+            <p class="article-date">Lagt ut <time datetime="2018-10-14">14.10.2018 </time> </p>
+          </header>
+
+          <section class="article-text">
+            <p>Installasjon av WAMP, trinn for trinn: </p>
+            <ol>
+              <li>Gå til <a href="http://www.wampserver.com/en/" class="link">wampserver.com</a>, og videre til download. </li>
+              <li>Velg «wampserver 64 bits (X64) 3.0.6». </li>
+              <li>Trykk «download directly» i vinduet som dukker opp. </li>
+              <li>Du blir nå sendt videre til <a href="https://sourceforge.net/projects/wampserver/files/" class="link">sourceforge.net</a>,
+                hvor du velger «download latest version». </li>
+              <li>Følg installasjonsveiledningen gjennom valg av språk, godkjenning av lisensavtalen og informasjon om installasjon. </li>
+              <li>Når du blir spurt om hvor WampServer skal installeres, er det en stor fordel å plassere den i c:\wamp (som foreslått).
+                Dersom dette ikke er mulig, velger du en alternativ plassering, men vær forsiktig med å velge mapper som er
+                brukeravhengige/virtuelle. </li>
+              <li>Fortsett installasjonen gjennom godkjenning av valgene og selve kopieringen av filer. </li>
+              <li>Installasjonsprosessen spør nå om foretrukket nettleser og teksteditor. Her velger du «Yes» for å endre, eller «No» for å
+                la det stå. Selv velger jeg å endre til Chrome og Atom. </li>
+              <li>Til slutt kommer litt mer info om installasjonen. Velg Next og Finish. </li>
+              <li>Du har nå installert WAMP. </li>
+            </ol>
+          </section>
+
+          <section class="article-img">
+            <figure>
+              <img src="../bilder/wamp/installation-step2.PNG" alt="Skjermbilde av installasjon"/>
+              <figcaption>Foto:Trinn 2 </figcaption>
+            </figure>
+            <figure>
+              <img src="../bilder/wamp/installation-step3.PNG" alt="Skjermbilde av installasjon"/>
+              <figcaption>Foto:Trinn 3 </figcaption>
+            </figure>
+            <figure>
+              <img src="../bilder/wamp/installation-step4.PNG" alt="Skjermbilde av installasjon"/>
+              <figcaption>Foto:Trinn 4 </figcaption>
+            </figure>
+            <figure>
+              <img src="../bilder/wamp/installation-step6.PNG" alt="Skjermbilde av installasjon"/>
+              <figcaption>Foto:Trinn 6 </figcaption>
+            </figure>
+            <figure>
+              <img src="../bilder/wamp/installation-step8.PNG" alt="Skjermbilde av installasjon"/>
+              <figcaption>Foto:Trinn 8 </figcaption>
+            </figure>
+            <figure>
+              <img src="../bilder/wamp/installation-step9.PNG" alt="Skjermbilde av installasjon"/>
+              <figcaption>Foto:Trinn 9 </figcaption>
+            </figure>
+          </section>
+        </article>
+      </main>
+    </div>
+
+    <footer>
+      <p><a href="mailto:karolibk@hiof.no">karolibk@hiof.no </a></p>
+      <p>&copy; 2018 - Karoline Bøhn Karlsen </p>
+    </footer>
+
+    <script src="../javascript/menu.js"></script>
+  </body>
+</html>

@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="nb">
+  <head>
+    <meta charset="utf-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Webutvikling - Ressursside </title>
+    <link rel="stylesheet" href="../css/stylesheet-microdata.css" type="text/css"/>
+    <link rel="shortcut icon" href="../bilder/laptop.png" type="image/png"/>
+    <link href="https://fonts.googleapis.com/css?family=Indie+Flower" rel="stylesheet"/>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css"
+      integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous"/>
+  </head>
+
+  <body>
+    <header class="main-header">
+      <h1>Webutvikling </h1>
+    </header>
+
+    <div class="menu">
+      <button id="btnNavbar">
+        <i class="fas fa-bars"></i> Meny
+      </button>
+
+      <nav id="navbar" class="hiddenNavbar">
+        <a href="../index.html">Hjem</a>
+        <a href="../skisse.html">Skisse</a>
+
+        <div class="dropdown">
+          <button id="btnDropdown">Artikler </button>
+          <div id="dropdown-artikler" class="hiddenDropdown">
+            <a href="../artikler/git-github.html">Git / GitHub</a>
+            <a href="../artikler/mediatyper.html">Mediatyper</a>
+            <a href="../artikler/css-layout.html">CSS Layouts</a>
+            <a href="../artikler/responsivt-design.html">Responsivt design</a>
+            <a href="../artikler/universell-utforming.html">Universell utforming</a>
+            <a href="../artikler/wamp.html">WAMP</a>
+            <a href="../artikler/wordpress.html">WordPress</a>
+            <a href="../artikler/cms-systemer.html">CMS systemer</a>
+            <a href="../artikler/seo.html">SEO</a>
+            <a href="../artikler/sosiale-medier.html">Sosiale medier</a>
+            <a href="../artikler/microdata.html">Microdata</a>
+            <a href="../artikler/svg.html">SVG</a>
+          </div>
+        </div>
+      </nav>
+    </div>
+
+    <div class="content">
+      <main>
+        <h2>Person </h2>
+
+        <article itemscope itemtype="http://schema.org/Person">
+          <h3 itemprop="name">Markus Zusak </h3>
+          <p>Markus Zusak ble født <span itemprop="birthDate" content="1975-06-23">23. juni 1975</span> i
+            <span itemprop="birthPlace" itemscope itemtype="http://schema.org/Place">
+              <span itemprop="name">Sydney, Australia</span></span>,
+            som yngst i en søskenflokk på fire. Han er <span itemprop="jobTitle">forfatter</span> og best kjent for de
+            internasjonale bestselgerne The Messenger og Boktyven. Zusak er gift med <span itemprop="spouse">Mika Zusak</span>
+            og har to barn. </p>
+
+          <p>Moren hans <span itemprop="parent">Lisa</span> er opprinnelig fra Tyskland og hans far
+            <span itemprop="parent">Helmut</span> fra Østerrike. De emigrerte til Australia på slutten av 1950-tallet.
+            Under oppveksten skal Zusak ha blitt fortalt historier om det nasjonalsosialistiske Tyskland og bombingen av
+            München, hvor hans mor bodde. Det er disse fortellingene som skal ha inspirert ham til å skrive Boktyven.</p>
+
+          <p>Zusak er utdannet ved <span itemprop="affiliation">University of New South Wales</span>, hvor han tok en grad i
+            historie og engelsk. Han arbeidet både som engelsklærer og vaktmester før han fikk sitt store gjennombrudd med bøkene
+            The Messenger og The Book Thief.</p>
+
+          Awards for <i>Boktyven</i>:
+          <ul>
+            <li itemprop="award">Deutscher Jugendliteraturpreis </li>
+            <li itemprop="award">Ena Noel Award </li>
+            <li itemprop="award">Michael L. Printz Award runner-up </li>
+            <li itemprop="award">Kathleen Mitchell Award </li>
+          </ul>
+        </article>
+
+        <p><a href="../artikler/microdata.html" class="link">Tilbake til oppgaven</a></p>
+      </main>
+    </div>
+
+    <footer>
+      <p><a href="mailto:karolibk@hiof.no">karolibk@hiof.no </a></p>
+      <p>&copy; 2018 - Karoline Bøhn Karlsen </p>
+    </footer>
+
+    <script src="../javascript/menu.js"></script>
+  </body>
+</html>

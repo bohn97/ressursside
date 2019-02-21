@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="nb">
+  <head>
+    <meta charset="utf-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Webutvikling - Ressursside </title>
+    <link rel="stylesheet" href="../css/stylesheet-article.css" type="text/css"/>
+    <link rel="stylesheet" href="../css/print-article.css" type="text/css" media="print"/>
+    <link rel="shortcut icon" href="../bilder/laptop.png" type="image/png"/>
+    <link href="https://fonts.googleapis.com/css?family=Indie+Flower" rel="stylesheet"/>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css"
+      integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous"/>
+  </head>
+
+  <body>
+    <header class="main-header">
+      <h1>Webutvikling </h1>
+    </header>
+
+    <div class="menu">
+      <button id="btnNavbar">
+        <i class="fas fa-bars"></i> Meny
+      </button>
+
+      <nav id="navbar" class="hiddenNavbar">
+        <a href="../index.html">Hjem</a>
+        <a href="../skisse.html">Skisse</a>
+
+        <div class="dropdown">
+          <button id="btnDropdown">Artikler </button>
+          <div id="dropdown-artikler" class="hiddenDropdown">
+            <a href="git-github.html">Git / GitHub</a>
+            <a href="mediatyper.html">Mediatyper</a>
+            <a href="css-layout.html">CSS Layouts</a>
+            <a href="responsivt-design.html">Responsivt design</a>
+            <a href="universell-utforming.html">Universell utforming</a>
+            <a href="wamp.html">WAMP</a>
+            <a href="wordpress.html">WordPress</a>
+            <a href="cms-systemer.html">CMS systemer</a>
+            <a href="seo.html">SEO</a>
+            <a href="sosiale-medier.html">Sosiale medier</a>
+            <a href="microdata.html">Microdata</a>
+            <a href="svg.html">SVG</a>
+          </div>
+        </div>
+      </nav>
+    </div>
+
+    <div class="content">
+      <main>
+        <article>
+          <header class="article-header">
+            <h2>SVG </h2>
+            <p class="article-date">Lagt ut <time datetime="2018-11-11">11.11.2018 </time> </p>
+          </header>
+
+          <section class="article-text">
+            <p>SVG (Scalable Vector Graphics) er et XML (eXtensible Markup Language) basert format for å definere vektorbasert
+              grafikk for nettet. </p>
+            <p>Vektorgrafikk lages ved å plassere punkter på et rutenett og tegne linjer mellom disse punktene. En farge kan så bli
+              lagt til for å fylle ut de linjene som ble laget. </p>
+            <p>Med vektorgrafikk kan man øke dimensjonen til bildet uten at det påvirker kvaliteten. </p>
+            <p>SVG er en W3C-standard som integrerer med andre W3C-standarder som DOM og XSL. </p>
+
+            <h3>Fordeler </h3>
+            <p>SVG er fullt skalerbare, noe som betyr at man kan skalere det opp/ned uten å ofre bildekvaliteten. JPG, PNG og GIF
+              vil begynne å piksellere hvis de strekkes utover den opprinnelige størrelsen.</p>
+            <p>SVG kan også endre innholdet basert på skjermstørrelse og er følgelig ideelt for bruk i responsivt design. </p>
+            <p>SVG har god utskriftskvalitet ved enhver oppløsning, og ser skarpt ut på enheter med høy pixel-tetthet.  </p>
+            <p>SVG er tilgjengelig i DOM (Document Object Model) og kan derfor påvirkes med JavaScript, manipuleres med CSS og leses
+              av skjermlesere og søkemotorer </p>
+            <p>SVG kan manipuleres med CSS eller JavaScript, noe som betyr at man kan nå de ulike delene gjennom klasser, div’er
+              eller tagger, og dermed sette forskjellig stil og oppførsel på dem. </p>
+            <p>SVG er bare kode og følgelig ideelt format for animasjon. Dette betyr at man kan animere hele bildet som helhet eller
+              bare enkelte deler. </p>
+            <p>SVG kan opprettes og redigeres med ethvert tekstredigeringsprogram. </p>
+            <p>SVG kan åpnes med hvilken som helst nettleser. </p>
+            <p>Bilderedigeringsprogrammer som Photoshop, Sketch, Affinity og Inkscape kan eksportere bilder som SVG slik at ingen
+              kodekunnskap kreves.  </p>
+
+            <h3>Ulemper </h3>
+            <p>SVG virker bare med todimensjonale bilder, som f.eks. logoer, ikoner og illustrasjoner. Fotografier og alt man vil
+              fange med et kamera, virker ikke. </p>
+            <p>Filstørrelsen kan være stor, selv for små bilder. I tillegg vokser filstørrelsen veldig fort, hvis objektet består
+              av et stort antall små elementer. </p>
+            <p>Det er litt av en lærekurve for å forstå koden bak SVG og hvordan man skal vise den på nettet på en riktig måte.
+              Dette er i forhold til hvor dypt man vil gå, og om man vil lære å animere det eller manipulere det man får ut. Et
+              komplisert SVG kan også produsere mye kode som det er vanskelig å sile igjennom </p>
+
+            <h3>Bruksområder </h3>
+            <p>SVG brukes bl.a. for å lage logoer, ikoner, animasjoner, illustrasjoner og skjemaer/grafer for nettsteder. </p>
+
+            <h3>Eksempler </h3>
+            <svg width="300" height="300" xmlns="http://www.w3.org/2000/svg">
+              <circle cx="150" cy="150" r="150" fill="#518292" />
+              <circle cx="150" cy="150" r="125" fill="#5b92a4" />
+              <circle cx="150" cy="150" r="100" fill="#66a3b7" />
+              <circle cx="150" cy="150" r="75" fill="#518292" />
+              <circle cx="150" cy="150" r="50" fill="#5b92a4" />
+              <circle cx="150" cy="150" r="25" fill="#66a3b7" />
+            </svg>
+
+            <svg width="320" height="260" xmlns="http://www.w3.org/2000/svg">
+              <rect x="10" y="105" width="300" height="150" fill="#962952" stroke="black" /> <!--Grunnmur -->
+              <polygon points="0,105 160,0 320,105" fill="#919191" stroke="black"/> <!--Tak -->
+              <rect x="220" y="145" width="60" height="110" fill="#ffffff" stroke="black" /> <!--Dør -->
+              <line x1="220" y1="195" x2="235" y2="199" stroke="black" /> <!--Dørhåndtak -->
+              <rect x="35" y="145" width="70" height="40" fill="#ffffff" stroke="black" /> <!--Vindu 1 -->
+              <line x1="35" y1="165" x2="105" y2="165" stroke="black" /> <!--Horisontal strek -->
+              <line x1="70" y1="145" x2="70" y2="185" stroke="black" /> <!--Vertikal strek -->
+              <rect x="120" y="145" width="70" height="40" fill="#ffffff" stroke="black" /> <!--Vindu 2 -->
+              <line x1="120" y1="165" x2="190" y2="165" stroke="black" /> <!--Horisontal strek -->
+              <line x1="155" y1="145" x2="155" y2="185" stroke="black" /> <!--Vertikal strek -->
+            </svg>
+          </section>
+
+          <section class="article-img">
+            <!--<figure>
+              <img src="" alt=""/>
+              <figcaption>Foto: </figcaption>
+            </figure>-->
+          </section>
+        </article>
+      </main>
+    </div>
+
+    <footer>
+      <p><a href="mailto:karolibk@hiof.no">karolibk@hiof.no </a></p>
+      <p>&copy; 2018 - Karoline Bøhn Karlsen </p>
+    </footer>
+
+    <script src="../javascript/menu.js"></script>
+  </body>
+</html>

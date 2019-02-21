@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="nb">
+  <head>
+    <meta charset="utf-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Webutvikling - Ressursside </title>
+    <link rel="stylesheet" href="../css/stylesheet-microdata.css" type="text/css"/>
+    <link rel="shortcut icon" href="../bilder/laptop.png" type="image/png"/>
+    <link href="https://fonts.googleapis.com/css?family=Indie+Flower" rel="stylesheet"/>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css"
+      integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous"/>
+  </head>
+
+  <body>
+    <header class="main-header">
+      <h1>Webutvikling </h1>
+    </header>
+
+    <div class="menu">
+      <button id="btnNavbar">
+        <i class="fas fa-bars"></i> Meny
+      </button>
+
+      <nav id="navbar" class="hiddenNavbar">
+        <a href="../index.html">Hjem</a>
+        <a href="../skisse.html">Skisse</a>
+
+        <div class="dropdown">
+          <button id="btnDropdown">Artikler </button>
+          <div id="dropdown-artikler" class="hiddenDropdown">
+            <a href="../artikler/git-github.html">Git / GitHub</a>
+            <a href="../artikler/mediatyper.html">Mediatyper</a>
+            <a href="../artikler/css-layout.html">CSS Layouts</a>
+            <a href="../artikler/responsivt-design.html">Responsivt design</a>
+            <a href="../artikler/universell-utforming.html">Universell utforming</a>
+            <a href="../artikler/wamp.html">WAMP</a>
+            <a href="../artikler/wordpress.html">WordPress</a>
+            <a href="../artikler/cms-systemer.html">CMS systemer</a>
+            <a href="../artikler/seo.html">SEO</a>
+            <a href="../artikler/sosiale-medier.html">Sosiale medier</a>
+            <a href="../artikler/microdata.html">Microdata</a>
+            <a href="../artikler/svg.html">SVG</a>
+          </div>
+        </div>
+      </nav>
+    </div>
+
+    <div class="content">
+      <main>
+        <h2>Book </h2>
+
+        <article itemscope itemtype="http://schema.org/Book">
+          <h3 itemprop="name">Boktyven </h3>
+          <p>Året er 1939 i nazityskland. Døden har travle dager, og han skal snart få enda mer å gjøre. Den dagen Liesel Meminger
+            finner en bok i snøen ved brorens grav, forandres livet hennes dramatisk. Jenta har nemlig oppdaget noe hun ikke kan
+            motstå - bøker. Snart stjeler hun bøker fra nazistenes bokbål, borgermesterfruens bibliotek og der hun ellers måtte finne
+            dem. Det er fosterfaren som lærer henne å lese, og takket være bøkene klarer hun å finne mening i en verden som er i ferd
+            med å gå av hengslene. Boktyven er en usedvanlig beretning om en sunn sjel i en gal verden, og om ordenes grensesprengende
+            og livgivende betydning. Forfatteren velger Døden som forteller og klarer med dette å få fram en usentimental historie som
+            likevel har alle håpets, dårskapens og forventningens nyanser i seg. </p>
+
+          <p>Forfatter:
+            <span itemprop="author" itemscope itemtype="https://schema.org/Person">
+              <span itemprop="name">Markus Zusak </span>
+            </span></p>
+
+          Karakterer:
+            <ul>
+              <li itemprop="character">Liesel Meminger </li>
+              <li itemprop="character">Rudy Steiner </li>
+              <li itemprop="character">Max Vandenburg </li>
+              <li itemprop="character">Hans Hubermann </li>
+              <li itemprop="character">Rosa Hubermann </li>
+              <li itemprop="character">Døden </li>
+            </ul>
+
+          <p>ISBN: <span itemprop="isbn">	9788202416867 </span></p>
+          <p>Bokformat: <span itemprop="bookFormat">Pocket </span></p>
+          <p>Antall sider: <span itemprop="numberOfPages">539 </span></p>
+        </article>
+
+        <p><a href="../artikler/microdata.html" class="link">Tilbake til oppgaven</a></p>
+      </main>
+    </div>
+
+    <footer>
+      <p><a href="mailto:karolibk@hiof.no">karolibk@hiof.no </a></p>
+      <p>&copy; 2018 - Karoline Bøhn Karlsen </p>
+    </footer>
+
+    <script src="../javascript/menu.js"></script>
+  </body>
+</html>
